@@ -1,0 +1,48 @@
+body {
+    background-color: #8c8c8c;
+}
+h1 {
+    color: #337ab7;
+    text-shadow: 3px 3px 10px #FFFFFF;
+    background-color: #8c8c8c;
+    text-align: center;
+    font-size: 75px;
+    font-weight: bolder;
+}
+h2, h3{
+    color: #337ab7;
+    text-shadow: 2px 2px 10px #FFFFFF;
+    background-color: #8c8c8c;
+    text-align: center;
+    font-size: 35px;
+    font-weight: bolder;
+}
+i {
+    text-shadow: 2px 2px 10px #FFFFFF;
+}
+input {
+    box-shadow: 2px 2px 10px #FFFFFF;
+}
+h2 a:hover {
+    color: #ec971f;
+}
+#results div {
+    padding: 0 20px 20px 20px;
+    margin: 10px 10px;
+    background-color: #f5f0e5;
+    box-shadow: 2px 2px 10px #FFFFFF;
+}
+#text {
+    margin-top: 100px;
+}
+#searchB {
+    background-color: transparent;
+    border: transparent;
+}
+#searchB:hover {
+    color: #ec971f;
+}
+#results {
+    margin: 15px;
+    padding: 10px;
+}

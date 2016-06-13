@@ -1,0 +1,1453 @@
+html {
+    background-image: url("https://40.media.tumblr.com/f2b8078c8291bc09449442204878264e/tumblr_o4j4lfXVfx1v4ifixo1_540.jpg");
+    background-size: cover;
+    overflow: hidden;
+    height: auto;
+    width: auto;
+}
+body {
+    background-color: transparent;
+    height: 100%;
+
+}
+h1 {
+    color: #D4AF37;
+    padding-top: 5px;
+    font-family: 'Monsieur La Doulaise', cursive;
+    font-size: 3em;
+}
+@media screen and (min-width: 691px) {
+    .titleTable {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 690px) {
+    #quoteBox {
+        padding-left: 7em;
+        padding-right: 7em;
+    }
+    h1 {
+        display: none;
+    }
+    .pri-2 {
+        padding-left: 7em;
+    }
+    html {
+        background-size: 100%;
+    }
+}
+@media screen and (max-width: 538px) {
+    #quoteBox {
+        padding-left: 7em;
+        padding-right: 7em;
+        max-width: 25em;
+    }
+    #quoteBoxBtm {
+        padding-left: 7em;
+        padding-right: 7em;
+        max-width: 25em;
+    }
+}
+a {
+    color: #000000;
+}
+.page:hover {
+    background-color: #1b6d85;
+}
+.quote {
+    padding-top: 10px;
+    padding-left: 25px;
+    font-family: 'Courgette', cursive;
+    font-weight: bold;
+    font-size: 2em;
+}
+.footerF {
+    margin-top: -5px;
+    font-weight: bolder;
+    font-size: 24px;
+}
+.tLink {
+    font-family: 'Just Another Hand', cursive;
+    color: #000000;
+    font-size: 2em;
+    position: absolute;
+    bottom: 28%;
+    left: 32%;
+}
+.titleTable {
+    color: #D4AF37;
+    bottom: 12%;
+    left: 47%;
+    position: absolute;
+    font-family: 'Just Another Hand', cursive;
+    font-size: 1.5em;
+}
+#tweetQuote {
+    margin-top: -30px;
+    z-index: 9999 !important;
+}
+.fa .fa-twitter .fa-3x {
+    z-index: 9999 !important;
+}
+#newQuote {
+    z-index: 9999 !important;
+    height: 120%;
+    width: 120%;
+}
+.depress:active {
+    position: relative;
+    top: 1px;
+}
+.rotate1 {
+    -webkit-transform: rotate(0deg) translate3d(0, 0, 0);
+    -moz-transform: rotate(0deg);
+    -o-transform: rotate(0deg);
+    -ms-transform: rotate(0deg);
+    transform: rotate(0deg);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=0);
+}
+.rotate2 {
+    -webkit-transform: rotate(-180deg) translate3d(0, 0, 0);
+    -moz-transform: rotate(-180deg);
+    -o-transform: rotate(-180deg);
+    -ms-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.5s;
+    filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=2);
+}
+#tridiv {
+    perspective: 500px;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    font-size: 175%;
+    margin-top: 100px !important;
+
+}
+.face {
+    box-shadow: inset 0 0 0 1px rgba(0, 0, 0, 0.4);
+}
+.scene, .shape, .face, .face-wrapper, .cr {
+    position: absolute;
+    transform-style: preserve-3d;
+}
+.scene {
+    width: 80em;
+    height: 80em;
+    top: 50%;
+    left: 50%;
+    margin: -40em 0 0 -40em;
+}
+.shape {
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    transform-origin: 50%;
+}
+.face, .face-wrapper {
+    overflow: hidden;
+    transform-origin: 0 0;
+    backface-visibility: hidden;
+    /* hidden by default, prevent blinking and other weird rendering glitchs */
+}
+.face {
+    background-size: 100% 100%!important;
+    background-position: center;
+}
+.face-wrapper .face {
+    left: 100%;
+    width: 100%;
+    height: 100%
+}
+.photon-shader {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%
+}
+.side {
+    left: 50%;
+}
+.cr, .cr .side {
+    height: 100%;
+}
+[class*="cuboid"] .ft, [class*="cuboid"] .bk {
+    width: 100%;
+    height: 100%;
+}
+[class*="cuboid"] .bk {
+    left: 100%;
+}
+[class*="cuboid"] .rt {
+    transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="cuboid"] .lt {
+    transform: rotateY(90deg) translateX(-50%);
+}
+[class*="cuboid"] .tp {
+    transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cuboid"] .bm {
+    transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cuboid"] .lt {
+    left: 100%;
+}
+[class*="cuboid"] .bm {
+    top: 100%;
+}
+[class*="cylinder"] .tp {
+    transform: rotateX(90deg) translateY(-50%);
+}
+[class*="cylinder"] .bm {
+    transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="cylinder"] .tp, [class*="cylinder"] .bm, [class*="cylinder"] .tp .photon-shader, [class*="cylinder"] .bm .photon-shader {
+    border-radius: 50%;
+}
+[class*="cylinder"] .bm {
+    top: 100%;
+}
+[class*="prism"] .ft, [class*="prism"] .bk {
+    width: 100%;
+    height: 100%;
+}
+[class*="prism"] .bk {
+    left: 100%;
+}
+[class*="prism"] .rt {
+    transform: rotateY(-90deg) translateX(-50%);
+}
+[class*="prism"] .lt {
+    transform: rotateY(90deg) translateX(-50%);
+}
+[class*="prism"] .bm {
+    transform: rotateX(-90deg) translateY(-50%);
+}
+[class*="prism"] .lt {
+    left: 100%;
+}
+[class*="prism"] .bm {
+    top: 100%;
+}
+[class*="prism"] .rt .face {
+    left: -100%;
+    transform-origin: 100% 0;
+}
+/* .cub-1 styles */
+.cub-1 {
+    transform:translate3D(-0.10000000000000003em, 0em, 2.1em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    opacity:1;
+    width:47.625em;
+    height:1.375em;
+    margin:-0.6875em 0 0 -23.8125em;
+}
+.cub-1 .ft {
+    transform:translateZ(15.080357142857144em);
+}
+.cub-1 .bk {
+    transform:translateZ(-15.080357142857144em) rotateY(180deg);
+}
+.cub-1 .rt, .cub-1 .lt {
+    width:30.16071428571429em;
+    height:1.375em;
+}
+.cub-1 .tp, .cub-1 .bm {
+    width:47.625em;
+    height:30.16071428571429em;
+}
+.cub-1 .face {
+    background:url(http://static1.squarespace.com/static/5241e8cee4b0c8e9efdc1fd7/t/55e7e772e4b03bba84ec49c0/1441261429176/woodgrain-dark.jpg?format=2500w) #FFFFFF;
+}
+/* .cub-2 styles */
+.cub-2 {
+    transform:translate3D(11em, -0.9999999999999999em, 0.07142857142857142em) rotateX(0deg) rotateY(7.3deg) rotateZ(0deg);
+    opacity:1;
+    width:5.428571428571427em;
+    height:0.7142857142857149em;
+    margin:-0.35714285714285743em 0 0 -2.7142857142857135em;
+}
+.cub-2 .ft {
+    transform:translateZ(4.5em);
+}
+.cub-2 .bk {
+    transform:translateZ(-4.5em) rotateY(180deg);
+}
+.cub-2 .rt, .cub-2 .lt {
+    width:9em;
+    height:0.7142857142857149em;
+}
+.cub-2 .tp, .cub-2 .bm {
+    width:5.428571428571427em;
+    height:9em;
+}
+.cub-2 .face {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg) #FFFFFF;
+}
+/* .cub-3 styles */
+.cub-3 {
+    transform:translate3D(11.714285714285714em, -3.214285714285715em, -0.07142857142857142em) rotateX(0deg) rotateY(7.8deg) rotateZ(0deg);
+    opacity:1;
+    width:1.2857142857142847em;
+    height:3.8571428571428577em;
+    margin:-1.9285714285714288em 0 0 -0.6428571428571423em;
+}
+.cub-3 .ft {
+    transform:translateZ(3.2142857142857144em);
+}
+.cub-3 .bk {
+    transform:translateZ(-3.2142857142857144em) rotateY(180deg);
+}
+.cub-3 .rt, .cub-3 .lt {
+    width:6.428571428571429em;
+    height:3.8571428571428577em;
+}
+.cub-3 .tp, .cub-3 .bm {
+    width:1.2857142857142847em;
+    height:6.428571428571429em;
+}
+.cub-3 .face {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg) #FFFFFF;
+}
+.cub-3 .ft {
+    width:.01em;
+    margin-left:0.6428571428571423em;
+}
+.cub-3 .bk {
+    width:.01em;
+    margin-left:-0.6428571428571423em;
+}
+.cub-3 .rt, .cub-3 .lt {
+    width:5.142857142857144em;
+}
+.cub-3 .tp, .cub-3 .bm, .cub-3 .tp .photon-shader, .cub-3 .bm .photon-shader {
+    border-radius:0.6428571428571423em;
+}
+.cub-3 .cr {
+    width:0.6428571428571423em;
+    left:0.3214285714285712em;
+}
+.cub-3 .cr-0 {
+    transform: translate3D(0em, 0, 2.571428571428572em);
+}
+.cub-3 .cr-1 {
+    transform: translate3D(0em, 0, -2.571428571428572em);
+}
+.cub-3 .cr-2 {
+    transform: translate3D(0, 0, -2.571428571428572em);
+}
+.cub-3 .cr-3 {
+    transform: translate3D(0, 0, 2.571428571428572em);
+}
+.cub-3 .cr-0 .s0 {
+    transform: rotateY(15deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-0 .s1 {
+    transform: rotateY(45deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-0 .s2 {
+    transform: rotateY(75deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-1 .s0 {
+    transform: rotateY(105deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-1 .s1 {
+    transform: rotateY(135deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-1 .s2 {
+    transform: rotateY(165deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-2 .s0 {
+    transform: rotateY(195deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-2 .s1 {
+    transform: rotateY(225deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-2 .s2 {
+    transform: rotateY(255deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-3 .s0 {
+    transform: rotateY(285deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-3 .s1 {
+    transform: rotateY(315deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .cr-3 .s2 {
+    transform: rotateY(345deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-3 .side {
+    width:0.3695061045543004em;
+}
+/* .cub-4 styles */
+.cub-4 {
+    transform:translate3D(12.357142857142858em, -5.357142857142858em, -1.7857142857142865em) rotateX(-36.1deg) rotateY(9.8deg) rotateZ(0deg);
+    opacity:1;
+    width:0.571428571428573em;
+    height:0.9999999999999996em;
+    margin:-0.4999999999999998em 0 0 -0.2857142857142865em;
+}
+.cub-4 .ft {
+    transform:translateZ(1.7993970516967226em);
+}
+.cub-4 .bk {
+    transform:translateZ(-1.7993970516967226em) rotateY(180deg);
+}
+.cub-4 .rt, .cub-4 .lt {
+    width:3.598794103393445em;
+    height:0.9999999999999996em;
+}
+.cub-4 .tp, .cub-4 .bm {
+    width:0.571428571428573em;
+    height:3.598794103393445em;
+}
+.cub-4 .face {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg) #FFFFFF;
+}
+.cub-4 .ft {
+    width:.01em;
+    margin-left:0.2857142857142865em;
+}
+.cub-4 .bk {
+    width:.01em;
+    margin-left:-0.2857142857142865em;
+}
+.cub-4 .rt, .cub-4 .lt {
+    width:3.0273655319648722em;
+}
+.cub-4 .tp, .cub-4 .bm, .cub-4 .tp .photon-shader, .cub-4 .bm .photon-shader {
+    border-radius:0.2857142857142865em;
+}
+.cub-4 .cr {
+    width:0.2857142857142865em;
+    left:0.14285714285714324em;
+}
+.cub-4 .cr-0 {
+    transform: translate3D(0em, 0, 1.5136827659824361em);
+}
+.cub-4 .cr-1 {
+    transform: translate3D(0em, 0, -1.5136827659824361em);
+}
+.cub-4 .cr-2 {
+    transform: translate3D(0, 0, -1.5136827659824361em);
+}
+.cub-4 .cr-3 {
+    transform: translate3D(0, 0, 1.5136827659824361em);
+}
+.cub-4 .cr-0 .s0 {
+    transform: rotateY(15deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-0 .s1 {
+    transform: rotateY(45deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-0 .s2 {
+    transform: rotateY(75deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-1 .s0 {
+    transform: rotateY(105deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-1 .s1 {
+    transform: rotateY(135deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-1 .s2 {
+    transform: rotateY(165deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-2 .s0 {
+    transform: rotateY(195deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-2 .s1 {
+    transform: rotateY(225deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-2 .s2 {
+    transform: rotateY(255deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-3 .s0 {
+    transform: rotateY(285deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-3 .s1 {
+    transform: rotateY(315deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .cr-3 .s2 {
+    transform: rotateY(345deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-4 .side {
+    width:0.17811382424635622em;
+}
+/* .cyl-1 styles */
+.cyl-1 {
+    transform:translate3D(12.785714285714286em, -6.500000000000001em, -3.285714285714285em) rotateX(180deg) rotateY(526.5deg) rotateZ(-270deg);
+    opacity:1;
+    width:4.816508777733246em;
+    height:0.8571428571428568em;
+    margin:-0.4285714285714284em 0 0 -2.408254388866623em;
+}
+.cyl-1 .tp, .cyl-1 .bm {
+    width:4.816508777733246em;
+    height:4.816508777733246em;
+}
+.cyl-1 .side {
+    width:1.1243366978604903em;
+    height:0.8571428571428568em;
+}
+.cyl-1 .s0 {
+    transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s1 {
+    transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s2 {
+    transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s3 {
+    transform: rotateY(90deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s4 {
+    transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s5 {
+    transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s6 {
+    transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s7 {
+    transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s8 {
+    transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s9 {
+    transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s10 {
+    transform: rotateY(270deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s11 {
+    transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s12 {
+    transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .s13 {
+    transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 2.383254388866623em);
+}
+.cyl-1 .face, .cyl-1 .side {
+    background-color:#FFFFFF;
+}
+.cyl-1 .tp {
+    background:url(http://openclipart.org/image/800px/svg_to_png/32425/movie_reel.png);
+}
+.cyl-1 .bm {
+    background:url(http://openclipart.org/image/800px/svg_to_png/32425/movie_reel.png);
+}
+.cyl-1 .side {
+    background-color:#c0c0c0;
+}
+/* .cub-5 styles */
+.cub-5 {
+    transform:translate3D(12.964285714285715em, -5.642857142857143em, 3.0142857142857133em) rotateX(50deg) rotateY(9.8deg) rotateZ(0deg);
+    opacity:1;
+    width:0.571428571428573em;
+    height:0.9999999999999996em;
+    margin:-0.4999999999999998em 0 0 -0.2857142857142865em;
+}
+.cub-5 .ft {
+    transform:translateZ(1.7993970516967226em);
+}
+.cub-5 .bk {
+    transform:translateZ(-1.7993970516967226em) rotateY(180deg);
+}
+.cub-5 .rt, .cub-5 .lt {
+    width:3.598794103393445em;
+    height:0.9999999999999996em;
+}
+.cub-5 .tp, .cub-5 .bm {
+    width:0.571428571428573em;
+    height:3.598794103393445em;
+}
+.cub-5 .face {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg) #FFFFFF;
+}
+.cub-5 .ft {
+    width:.01em;
+    margin-left:0.2857142857142865em;
+}
+.cub-5 .bk {
+    width:.01em;
+    margin-left:-0.2857142857142865em;
+}
+.cub-5 .rt, .cub-5 .lt {
+    width:3.0273655319648722em;
+}
+.cub-5 .tp, .cub-5 .bm, .cub-5 .tp .photon-shader, .cub-5 .bm .photon-shader {
+    border-radius:0.2857142857142865em;
+}
+.cub-5 .cr {
+    width:0.2857142857142865em;
+    left:0.14285714285714324em;
+}
+.cub-5 .cr-0 {
+    transform: translate3D(0em, 0, 1.5136827659824361em);
+}
+.cub-5 .cr-1 {
+    transform: translate3D(0em, 0, -1.5136827659824361em);
+}
+.cub-5 .cr-2 {
+    transform: translate3D(0, 0, -1.5136827659824361em);
+}
+.cub-5 .cr-3 {
+    transform: translate3D(0, 0, 1.5136827659824361em);
+}
+.cub-5 .cr-0 .s0 {
+    transform: rotateY(15deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-0 .s1 {
+    transform: rotateY(45deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-0 .s2 {
+    transform: rotateY(75deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-1 .s0 {
+    transform: rotateY(105deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-1 .s1 {
+    transform: rotateY(135deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-1 .s2 {
+    transform: rotateY(165deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-2 .s0 {
+    transform: rotateY(195deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-2 .s1 {
+    transform: rotateY(225deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-2 .s2 {
+    transform: rotateY(255deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-3 .s0 {
+    transform: rotateY(285deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-3 .s1 {
+    transform: rotateY(315deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .cr-3 .s2 {
+    transform: rotateY(345deg) translate3D(-50%, 0, 0.26071428571428645em);
+}
+.cub-5 .side {
+    width:0.17811382424635622em;
+}
+/* .cyl-2 styles */
+.cyl-2 {
+    transform:translate3D(13.785714285714286em, -7.0000000000000036em, 4.071428571428573em) rotateX(180deg) rotateY(526.5deg) rotateZ(-270deg);
+    opacity:1;
+    width:5.527596634434749em;
+    height:0.8571428571428568em;
+    margin:-0.4285714285714284em 0 0 -2.7637983172173746em;
+}
+.cyl-2 .tp, .cyl-2 .bm {
+    width:5.527596634434749em;
+    height:5.527596634434749em;
+}
+.cyl-2 .side {
+    width:1.2866378608706865em;
+    height:0.8571428571428568em;
+}
+.cyl-2 .s0 {
+    transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s1 {
+    transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s2 {
+    transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s3 {
+    transform: rotateY(90deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s4 {
+    transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s5 {
+    transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s6 {
+    transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s7 {
+    transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s8 {
+    transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s9 {
+    transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s10 {
+    transform: rotateY(270deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s11 {
+    transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s12 {
+    transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .s13 {
+    transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 2.7387983172173747em);
+}
+.cyl-2 .face, .cyl-2 .side {
+    background-color:#FFFFFF;
+}
+.cyl-2 .tp {
+    background:url(http://openclipart.org/image/800px/svg_to_png/32425/movie_reel.png);
+}
+.cyl-2 .bm {
+    background:url(http://openclipart.org/image/800px/svg_to_png/32425/movie_reel.png);
+}
+.cyl-2 .side {
+    background-color:#c0c0c0;
+}
+/* .cub-6 styles */
+.cub-6 {
+    transform:translate3D(10.428571428571427em, -1.3571428571428577em, 0.1428571428571428em) rotateX(0deg) rotateY(7.8deg) rotateZ(0deg);
+    opacity:1;
+    width:1.2857142857142847em;
+    height:3.000000000000001em;
+    margin:-1.5000000000000004em 0 0 -0.6428571428571423em;
+}
+.cub-6 .ft {
+    transform:translateZ(3.2142857142857144em);
+}
+.cub-6 .bk {
+    transform:translateZ(-3.2142857142857144em) rotateY(180deg);
+}
+.cub-6 .rt, .cub-6 .lt {
+    width:6.428571428571429em;
+    height:3.000000000000001em;
+}
+.cub-6 .tp, .cub-6 .bm {
+    width:1.2857142857142847em;
+    height:6.428571428571429em;
+}
+.cub-6 .face {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg) #FFFFFF;
+}
+.cub-6 .ft {
+    width:.01em;
+    margin-left:0.6428571428571423em;
+}
+.cub-6 .bk {
+    width:.01em;
+    margin-left:-0.6428571428571423em;
+}
+.cub-6 .rt, .cub-6 .lt {
+    width:5.142857142857144em;
+}
+.cub-6 .tp, .cub-6 .bm, .cub-6 .tp .photon-shader, .cub-6 .bm .photon-shader {
+    border-radius:0.6428571428571423em;
+}
+.cub-6 .cr {
+    width:0.6428571428571423em;
+    left:0.3214285714285712em;
+}
+.cub-6 .cr-0 {
+    transform: translate3D(0em, 0, 2.571428571428572em);
+}
+.cub-6 .cr-1 {
+    transform: translate3D(0em, 0, -2.571428571428572em);
+}
+.cub-6 .cr-2 {
+    transform: translate3D(0, 0, -2.571428571428572em);
+}
+.cub-6 .cr-3 {
+    transform: translate3D(0, 0, 2.571428571428572em);
+}
+.cub-6 .cr-0 .s0 {
+    transform: rotateY(15deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-0 .s1 {
+    transform: rotateY(45deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-0 .s2 {
+    transform: rotateY(75deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-1 .s0 {
+    transform: rotateY(105deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-1 .s1 {
+    transform: rotateY(135deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-1 .s2 {
+    transform: rotateY(165deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-2 .s0 {
+    transform: rotateY(195deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-2 .s1 {
+    transform: rotateY(225deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-2 .s2 {
+    transform: rotateY(255deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-3 .s0 {
+    transform: rotateY(285deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-3 .s1 {
+    transform: rotateY(315deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .cr-3 .s2 {
+    transform: rotateY(345deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-6 .side {
+    width:0.3695061045543004em;
+}
+/* .cub-7 styles */
+.cub-7 {
+    transform:translate3D(10.57142857142857em, -2.428571428571429em, 1.4285714285714282em) rotateX(0deg) rotateY(7.8deg) rotateZ(0deg);
+    opacity:1;
+    width:1.2857142857142847em;
+    height:3.8571428571428577em;
+    margin:-1.9285714285714288em 0 0 -0.6428571428571423em;
+}
+.cub-7 .ft {
+    transform:translateZ(1.9210791233318152em);
+}
+.cub-7 .bk {
+    transform:translateZ(-1.9210791233318152em) rotateY(180deg);
+}
+.cub-7 .rt, .cub-7 .lt {
+    width:3.8421582466636304em;
+    height:3.8571428571428577em;
+}
+.cub-7 .tp, .cub-7 .bm {
+    width:1.2857142857142847em;
+    height:3.8421582466636304em;
+}
+.cub-7 .face {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg) #FFFFFF;
+}
+.cub-7 .ft {
+    width:.01em;
+    margin-left:0.6428571428571423em;
+}
+.cub-7 .bk {
+    width:.01em;
+    margin-left:-0.6428571428571423em;
+}
+.cub-7 .rt, .cub-7 .lt {
+    width:2.5564439609493457em;
+}
+.cub-7 .tp, .cub-7 .bm, .cub-7 .tp .photon-shader, .cub-7 .bm .photon-shader {
+    border-radius:0.6428571428571423em;
+}
+.cub-7 .cr {
+    width:0.6428571428571423em;
+    left:0.3214285714285712em;
+}
+.cub-7 .cr-0 {
+    transform: translate3D(0em, 0, 1.2782219804746728em);
+}
+.cub-7 .cr-1 {
+    transform: translate3D(0em, 0, -1.2782219804746728em);
+}
+.cub-7 .cr-2 {
+    transform: translate3D(0, 0, -1.2782219804746728em);
+}
+.cub-7 .cr-3 {
+    transform: translate3D(0, 0, 1.2782219804746728em);
+}
+.cub-7 .cr-0 .s0 {
+    transform: rotateY(15deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-0 .s1 {
+    transform: rotateY(45deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-0 .s2 {
+    transform: rotateY(75deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-1 .s0 {
+    transform: rotateY(105deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-1 .s1 {
+    transform: rotateY(135deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-1 .s2 {
+    transform: rotateY(165deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-2 .s0 {
+    transform: rotateY(195deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-2 .s1 {
+    transform: rotateY(225deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-2 .s2 {
+    transform: rotateY(255deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-3 .s0 {
+    transform: rotateY(285deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-3 .s1 {
+    transform: rotateY(315deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .cr-3 .s2 {
+    transform: rotateY(345deg) translate3D(-50%, 0, 0.6178571428571423em);
+}
+.cub-7 .side {
+    width:0.3695061045543004em;
+}
+/* .cyl-3 styles */
+.cyl-3 {
+    transform:translate3D(10.357142857142858em, -3.5714285714285716em, 2.220446049250313em) rotateX(90deg) rotateY(179.3deg) rotateZ(7deg);
+    opacity:1;
+    width:0.9999999999999998em;
+    height:1.8571428571428568em;
+    margin:-0.9285714285714284em 0 0 -0.4999999999999999em;
+}
+.cyl-3 .tp, .cyl-3 .bm {
+    width:0.9999999999999998em;
+    height:0.9999999999999998em;
+}
+.cyl-3 .side {
+    width:0.2532434743901499em;
+    height:1.8571428571428568em;
+}
+.cyl-3 .s0 {
+    transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s1 {
+    transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s2 {
+    transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s3 {
+    transform: rotateY(90deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s4 {
+    transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s5 {
+    transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s6 {
+    transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s7 {
+    transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s8 {
+    transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s9 {
+    transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s10 {
+    transform: rotateY(270deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s11 {
+    transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s12 {
+    transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .s13 {
+    transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 0.47499999999999987em);
+}
+.cyl-3 .face, .cyl-3 .side {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg) #FFFFFF;
+}
+/* .cyl-4 styles */
+.cyl-4 {
+    transform:translate3D(10.071428571428571em, -3.6428571428571432em, -1.4285714285714284em) rotateX(90deg) rotateY(179.3deg) rotateZ(7deg);
+    opacity:1;
+    width:1.7089965493995027em;
+    height:1.0063890128788668em;
+    margin:-0.5031945064394334em 0 0 -0.8544982746997514em;
+}
+.cyl-4 .tp, .cyl-4 .bm {
+    width:1.7089965493995027em;
+    height:1.7089965493995027em;
+}
+.cyl-4 .side {
+    width:0.41506731015572007em;
+    height:1.0063890128788668em;
+}
+.cyl-4 .s0 {
+    transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s1 {
+    transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s2 {
+    transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s3 {
+    transform: rotateY(90deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s4 {
+    transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s5 {
+    transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s6 {
+    transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s7 {
+    transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s8 {
+    transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s9 {
+    transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s10 {
+    transform: rotateY(270deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s11 {
+    transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s12 {
+    transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .s13 {
+    transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 0.8294982746997513em);
+}
+.cyl-4 .face, .cyl-4 .side {
+    background-color:#FFFFFF;
+}
+.cyl-4 .tp {
+    background-color:#FFFFFF;
+}
+.cyl-4 .bm {
+    background:url(http://img08.deviantart.net/157c/i/2007/099/7/3/gun_metal_grey_texture_by_georgecotton.png);
+}
+.cyl-4 .side {
+    background:url(http://img08.deviantart.net/157c/i/2007/099/7/3/gun_metal_grey_texture_by_georgecotton.png);
+}
+/* .cub-8 styles */
+.cub-8 {
+    transform:translate3D(-6.178571428571429em, -0.5089285714285714em, 0.5625em) rotateX(0deg) rotateY(12.2deg) rotateZ(0deg);
+    opacity:1;
+    width:5.225439802918541em;
+    height:0.875em;
+    margin:-0.4375em 0 0 -2.6127199014592706em;
+}
+.cub-8 .ft {
+    transform:translateZ(3.5131504330770253em);
+}
+.cub-8 .bk {
+    transform:translateZ(-3.5131504330770253em) rotateY(180deg);
+}
+.cub-8 .rt, .cub-8 .lt {
+    width:7.026300866154051em;
+    height:0.875em;
+}
+.cub-8 .tp, .cub-8 .bm {
+    width:5.225439802918541em;
+    height:7.026300866154051em;
+}
+.cub-8 .face {
+    background:url(https://40.media.tumblr.com/9c2da3531b48de064e89e6e488553b54/tumblr_o3bjhz3Xob1v4ifixo1_540.jpg) #FFFFFF;
+}
+/* .cub-9 styles */
+.cub-9 {
+    transform:translate3D(-3.178571428571429em, -0.5803571428571428em, -0.008928571428571397em) rotateX(0deg) rotateY(-1deg) rotateZ(0deg);
+    opacity:1;
+    width:5.225439802918541em;
+    height:0.875em;
+    margin:-0.4375em 0 0 -2.6127199014592706em;
+}
+.cub-9 .ft {
+    transform:translateZ(3.5131504330770253em);
+}
+.cub-9 .bk {
+    transform:translateZ(-3.5131504330770253em) rotateY(180deg);
+}
+.cub-9 .rt, .cub-9 .lt {
+    width:7.026300866154051em;
+    height:0.875em;
+}
+.cub-9 .tp, .cub-9 .bm {
+    width:5.225439802918541em;
+    height:7.026300866154051em;
+}
+.cub-9 .face {
+    background:url(https://40.media.tumblr.com/ea1c4bdef3003e906f47c54d05a4d9e1/tumblr_o34hdtJpzG1v4ifixo1_540.png) #FFFFFF;
+}
+/* .cub-10 styles */
+.cub-10 {
+    transform:translate3D(-0.10714285714285768em, -0.5803571428571429em, 0.705357142857143em) rotateX(0deg) rotateY(-9deg) rotateZ(0deg);
+    opacity:1;
+    width:5.225439802918541em;
+    height:0.875em;
+    margin:-0.4375em 0 0 -2.6127199014592706em;
+}
+.cub-10 .ft {
+    transform:translateZ(3.5131504330770253em);
+}
+.cub-10 .bk {
+    transform:translateZ(-3.5131504330770253em) rotateY(180deg);
+}
+.cub-10 .rt, .cub-10 .lt {
+    width:7.026300866154051em;
+    height:0.875em;
+}
+.cub-10 .tp, .cub-10 .bm {
+    width:5.225439802918541em;
+    height:7.026300866154051em;
+}
+.cub-10 .face {
+    background:url(https://36.media.tumblr.com/a0d80035411cd9d45a7c4118410b2d8a/tumblr_o3jcutEJMY1v4ifixo1_540.png) #FFFFFF;
+}
+/* .cub-11 styles */
+.cub-11 {
+    transform:translate3D(5.25em, -0.5803571428571429em, 1.6339285714285716em) rotateX(0deg) rotateY(-0.9deg) rotateZ(0deg);
+    opacity:1;
+    width:5.225439802918541em;
+    height:0.875em;
+    margin:-0.4375em 0 0 -2.6127199014592706em;
+}
+.cub-11 .ft {
+    transform:translateZ(3.5131504330770253em);
+}
+.cub-11 .bk {
+    transform:translateZ(-3.5131504330770253em) rotateY(180deg);
+}
+.cub-11 .rt, .cub-11 .lt {
+    width:7.026300866154051em;
+    height:0.875em;
+}
+.cub-11 .tp, .cub-11 .bm {
+    width:5.225439802918541em;
+    height:7.026300866154051em;
+}
+.cub-11 .face {
+    background:url(https://41.media.tumblr.com/1bb51245366cf7d2ed615777511d43bc/tumblr_o34hdtJpzG1v4ifixo3_540.png) #FFFFFF;
+}
+/* .cyl-5 styles */
+.cyl-5 {
+    transform:translate3D(-14.785714285714286em, -1.2142857142857142em, -0.07142857142857142em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    opacity:1;
+    width:2.1428571428571423em;
+    height:2.428571428571429em;
+    margin:-1.2142857142857144em 0 0 -1.0714285714285712em;
+}
+.cyl-5 .tp, .cyl-5 .bm {
+    width:2.1428571428571423em;
+    height:2.1428571428571423em;
+}
+.cyl-5 .side {
+    width:0.514093159407464em;
+    height:2.428571428571429em;
+}
+.cyl-5 .s0 {
+    transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s1 {
+    transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s2 {
+    transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s3 {
+    transform: rotateY(90deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s4 {
+    transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s5 {
+    transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s6 {
+    transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s7 {
+    transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s8 {
+    transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s9 {
+    transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s10 {
+    transform: rotateY(270deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s11 {
+    transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s12 {
+    transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .s13 {
+    transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 1.0464285714285713em);
+}
+.cyl-5 .face, .cyl-5 .side {
+    background-color:#FFFFFF;
+}
+.cyl-5 .tp {
+    background-color:#864a44;
+}
+.cyl-5 .side {
+    background:url(http://www.tntgenesis.com/wp-content/uploads/2016/01/tntgenesis_logo_nbnav.png) #3aadad;
+}
+/* .cyl-6 styles */
+.cyl-6 {
+    transform:translate3D(-15.642857142857142em, -1.5714285714285716em, 0.5714285714285716em) rotateX(-180deg) rotateY(-310.3deg) rotateZ(90deg);
+    opacity:1;
+    width:1.4285714285714295em;
+    height:0.42857142857142705em;
+    margin:-0.21428571428571352em 0 0 -0.7142857142857147em;
+}
+.cyl-6 .tp, .cyl-6 .bm {
+    width:1.4285714285714295em;
+    height:1.4285714285714295em;
+}
+.cyl-6 .side {
+    width:0.351062106271643em;
+    height:0.42857142857142705em;
+}
+.cyl-6 .s0 {
+    transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s1 {
+    transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s2 {
+    transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s3 {
+    transform: rotateY(90deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s4 {
+    transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s5 {
+    transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s6 {
+    transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s7 {
+    transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s8 {
+    transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s9 {
+    transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s10 {
+    transform: rotateY(270deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s11 {
+    transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s12 {
+    transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .s13 {
+    transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 0.6892857142857147em);
+}
+.cyl-6 .side {
+    background-color:#3aadad;
+}
+/* .cyl-7 styles */
+.cyl-7 {
+    transform:translate3D(2.7777777777777777em, 0em, 9.5em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    opacity:1;
+    width:4.111111111111111em;
+    height:2.1111111111111107em;
+    margin:-1.0555555555555554em 0 0 -2.0555555555555554em;
+}
+.cyl-7 .tp, .cyl-7 .bm {
+    width:4.111111111111111em;
+    height:4.111111111111111em;
+}
+.cyl-7 .side {
+    width:0.9633342836039497em;
+    height:2.1111111111111107em;
+}
+.cyl-7 .s0 {
+    transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s1 {
+    transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s2 {
+    transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s3 {
+    transform: rotateY(90deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s4 {
+    transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s5 {
+    transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s6 {
+    transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s7 {
+    transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s8 {
+    transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s9 {
+    transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s10 {
+    transform: rotateY(270deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s11 {
+    transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s12 {
+    transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .s13 {
+    transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 2.0305555555555554em);
+}
+.cyl-7 .face, .cyl-7 .side {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg) #FFFFFF;
+}
+/* .cyl-8 styles */
+.cyl-8 {
+    transform:translate3D(2.7777777777777772em, 0em, 9.499999999999998em) rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+    opacity:1;
+    width:1.8888888888888893em;
+    height:2.5555555555555554em;
+    margin:-1.2777777777777777em 0 0 -0.9444444444444446em;
+}
+.cyl-8 .tp, .cyl-8 .bm {
+    width:1.8888888888888893em;
+    height:1.8888888888888893em;
+}
+.cyl-8 .side {
+    width:0.45612656273695em;
+    height:2.5555555555555554em;
+}
+.cyl-8 .s0 {
+    transform: rotateY(12.857142857142858deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s1 {
+    transform: rotateY(38.57142857142857deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s2 {
+    transform: rotateY(64.28571428571429deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s3 {
+    transform: rotateY(90deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s4 {
+    transform: rotateY(115.71428571428572deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s5 {
+    transform: rotateY(141.42857142857144deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s6 {
+    transform: rotateY(167.14285714285714deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s7 {
+    transform: rotateY(192.85714285714286deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s8 {
+    transform: rotateY(218.57142857142858deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s9 {
+    transform: rotateY(244.2857142857143deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s10 {
+    transform: rotateY(270deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s11 {
+    transform: rotateY(295.7142857142857deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s12 {
+    transform: rotateY(321.4285714285714deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .s13 {
+    transform: rotateY(347.1428571428571deg) translate3D(-50%, 0, 0.9194444444444446em);
+}
+.cyl-8 .face, .cyl-8 .side {
+    background:url(http://www.dhrconstruction.com/images/playicon.png);
+}
+.cyl-8 .side {
+    background:url(http://i414.photobucket.com/albums/pp225/KingOfPimpsRadio/Zaby%20Stuff/black-metal-texture.jpg);
+}
+/* .pri-2 styles */
+.pri-2 {
+    transform:translate3D(10.106547619047618em, -12.377976190476184em, -12.227380952380955em) rotateX(-453.7deg) rotateY(-1262.6deg) rotateZ(1076.7deg);
+    opacity:0.1;
+    width:0.03141463462364466em;
+    height:24.92315084905691em;
+    margin:-12.461575424528455em 0 0 -0.01570731731182233em;
+}
+.pri-2 .rt .face {
+    transform:rotateZ(-35.04642861999194deg);
+}
+.pri-2 .lt .face {
+    transform:rotateZ(35.04642861999194deg);
+}
+.pri-2 .ft {
+    height:30.442832508235007em;
+    transform:translateZ(-8.740746576803438em) rotateX(35.04642861999194deg);
+}
+.pri-2 .bk {
+    transform:translateZ(-8.740746576803438em) rotateY(180deg);
+}
+.pri-2 .rt, .pri-2 .lt {
+    width:17.481493153606877em;
+    height:24.92315084905691em;
+}
+.pri-2 .rt .face, .pri-2 .lt .face {
+    height:30.442832508235007em;
+}
+.pri-2 .bm {
+    width:0.03141463462364466em;
+    height:17.481493153606877em;
+}
+.pri-2 .face {
+    background-color:#79b5c6;
+}
+/* .cub-12 styles */
+.cub-12 {
+    transform:translate3D(-5em, -13.208333333333332em, -21.75em) rotateX(18deg) rotateY(0deg) rotateZ(0deg);
+    opacity:1;
+    width:29.75em;
+    height:18.75em;
+    margin:-9.375em 0 0 -14.875em;
+}
+.cub-12 .ft {
+    transform:translateZ(0.25em);
+}
+.cub-12 .bk {
+    transform:translateZ(-0.25em) rotateY(180deg);
+}
+.cub-12 .rt, .cub-12 .lt {
+    width:0.5em;
+    height:18.75em;
+}
+.cub-12 .tp, .cub-12 .bm {
+    width:29.75em;
+    height:0.5em;
+}
+.cub-12 .face {
+    background-color:#FFFFFF;
+}

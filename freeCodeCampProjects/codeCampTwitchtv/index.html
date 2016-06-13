@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Twitch List</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:900,700' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Rancho&effect=neon">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="container" id="base">
+    <div class="row" id="header">
+        <div class="col-xs-8 col-sm-9" id="title">
+            <h1 class="font-effect-neon"><i class="fa fa-twitch" aria-hidden="true"></i>Twitch List</h1>
+        </div>
+        <div class="col-xs-4 col-sm-3" id="toggleMenu">
+            <div class="toggleButton font-effect-neon active" id="all">
+                <span class="tbText" id="allText">All</span><i class="fa fa-square icon" aria-hidden="true"></i></div>
+            <div class="toggleButton font-effect-neon" id="online">
+                <span class="tbText" id="onText">Online</span><i class="fa fa-square icon" aria-hidden="true"></i></div>
+            <div class="toggleButton font-effect-neon" id="offline">
+                <span class="tbText" id="offText">Offline</span><i class="fa fa-square-o icon" aria-hidden="true"></i></div>
+        </div>
+    </div>
+    <div id="showUsers"></div>
+    <div class="row" id="footer"><a href="http://trevortuchten.com" target="_blank"><p class="font-effect-neon">TNTcreations</p></a></div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="js/main.js"></script>
+<script src="https://use.fontawesome.com/bff2e41004.js"></script>
+</body>
+</html>

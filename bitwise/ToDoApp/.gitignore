@@ -1,0 +1,4 @@
+#gitignore
+.idea
+bower_components
+desktop.ini

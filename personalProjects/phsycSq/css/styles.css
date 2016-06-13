@@ -1,0 +1,28 @@
+html {
+	background-color: #000000;
+}
+p {
+	color: #5ADB0F;
+	text-shadow: 35px 15px #CADB0F;
+	font-size: 50px;
+    position :relative;
+     /* Chrome, Safari, Opera */ 
+    -webkit-animation: mymove 7s infinite;
+    animation: mymove 7s infinite;
+}
+/*Chrome, Safari, Opera */
+@-webkit-keyframes mymove {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 150px; left: 25px; color: #0FAFDB; text-shadow: 2px 2px #1E23A8;}
+    50%	 {top: 0px; left: 50px; color: #C41408; text-shadow: 35px 15px #FF6600;}
+    75%  {top: 150px; left: 25px; color: #F774DD; text-shadow: 3px 3px #690C56;}}
+    100% {top: 60px; left: 0px;}
+}
+/*Standard syntax*/
+@keyframes mymove {
+    0%   {top: 0px; left: 0px;}
+    25%  {top: 150px; left: 25px; color: #0FAFDB; text-shadow: 2px 2px #1E23A8;}
+    50%  {top: 0px; left: 50px; color: #C41408; text-shadow: 35px 15px #FF6600;}
+    75%  {top: 150px; left: 25px; color: #F774DD; text-shadow: 3px 3px #690C56;}}
+    100% {top: 60px; left: 0px;}
+} 

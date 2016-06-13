@@ -1,0 +1,145 @@
+body {
+    background-color: #0EA3C4;
+}
+@keyframes slidein {
+    from {
+        margin-left:100%;
+        width:300%
+    }
+    to {
+        margin-left:0;
+        width:100%;
+    }
+}
+@keyframes slidein1 {
+    from {
+        margin-top:100%;
+    }
+    to {
+        margin-top:0;
+    }
+}
+h1 {
+    animation-duration: 4s;
+    animation-name: slidein;
+    animation-iteration-count: 1;
+    animation-direction: alternate;
+    background-color: #0EA3C4;
+    text-align: center;
+    padding-bottom: 5px;
+    overflow: hidden;
+    color: #000000;
+    text-shadow: 1px 1px 5px #FF0000, 1px 1px 7px #0000FF;
+}
+#ListDiv {
+    animation-duration: 4s;
+    animation-name: slidein1;
+    animation-iteration-count: 1;
+    animation-direction: normal;
+	display: block;
+    position: absolute;
+    top: 20%;
+    left: 20%;
+    width: 60%;
+    background-color: #ffffff;
+    padding: 1em 1em 1em 2em;
+	border: solid 1em #000000;
+    box-shadow: 2px 2px 5px #FF0000, 2px 2px 7px #0000FF;
+	border-radius: 1em;
+}
+#TaskButton {
+
+}
+#TaskButton:hover {
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 2px 2px 5px #FF0000, 2px 2px 7px #0000FF;
+}
+#NewTaskButton {
+
+}
+#NewTaskButton:hover {
+    color: #ffffff;
+    background-color: #000000;
+    box-shadow: 2px 2px 5px #FF0000, 2px 2px 7px #0000FF;
+}
+#EditWindowDiv {
+	display: none;
+	position: absolute;
+	top: 40%;
+	border-radius: 1em;
+	padding: 10px 20px;
+    left: 40%;
+    width: 40%;
+    height: 8em;
+    background: white;
+    border: solid 1em #000000;
+    box-shadow: 2px 2px 5px #FF0000, 2px 2px 7px #0000FF;
+    z-index: 2;
+}
+ol {
+    counter-reset: li; /* Initiate a counter */
+    list-style: none; /* Remove default numbering */
+    *list-style: decimal; /* Keep using default numbering for IE6/7 */
+    font: 20px 'trebuchet MS', 'lucida sans';
+    padding: 0;
+    margin-bottom: 4em;
+    text-shadow: 0 1px 0 rgba(255,255,255,.5);
+}
+ol ol {
+    margin: 0 0 0 2em; /* Add some left margin for inner lists */
+}
+.rounded-list a{
+    position: relative;
+    display: block;
+    padding: .4em .4em .4em 2em;
+    margin: .5em 0;
+    background:  #0EA3C4;
+    color: #000000;
+    text-shadow: 1px 1px 5px #FF0000, 1px 1px 7px #0000FF;
+    text-decoration: none;
+    border-radius: .3em;
+    transition: all .3s ease-out;   
+}
+#ListNode {
+    background:  #0EA3C4;
+}
+.rounded-list a:hover{
+    background: #000000;
+    color: #ffffff;
+}
+.rounded-list a:hover:before{
+    transform: scale(1.2,1.2);
+    background-color: #0EA3C4;
+    color: #000000;
+    text-shadow: 1px 1px 5px #FF0000, 1px 1px 7px #0000FF;
+}
+.rounded-list a:before{
+    content: counter(li);
+    counter-increment: li;
+    position: absolute; 
+    left: -1.3em;
+    top: 50%;
+    margin-top: -1.3em;
+    background: #000000;
+    color: #ffffff;
+    box-shadow: 2px 2px 5px #FF0000, 2px 2px 7px #0000FF;
+    height: 2.5em;
+    width: 2.5em;
+    line-height: 2em;
+    border: .3em solid #fff;
+    text-align: center;
+    font-weight: bold;
+    border-radius: 2em;
+    transition: all .3s ease-out;
+}
+
+.ListControls {
+	color: #EB0075;
+	opacity: 0;
+	transition: all .3s ease-in-out;
+}
+
+a:hover .ListControls {
+	opacity: 1;
+}

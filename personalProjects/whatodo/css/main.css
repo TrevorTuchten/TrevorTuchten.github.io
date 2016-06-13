@@ -1,0 +1,88 @@
+/*Styles for the main page elements*/
+html {
+    background-color: #bce8f1;
+}
+.wrap {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+}
+h1 {
+    text-align: center;
+    font-size: 5em;
+    font-family: 'Frijole', cursive;
+    color: #ffffff;
+}
+#weather {
+    display: block;
+}
+/*styles for the google map placement*/
+#googleMap {
+    width: 100%;
+    height: 350px;
+    margin: 0 auto 20px auto;
+    box-shadow: 0 15px 10px 5px #94ADB5;
+    z-index:    1002;
+}
+/*styles the the main header/ weather information*/
+.data {
+    font-size: 2em;
+    font-family: 'Frijole', cursive;
+    text-align: center;
+    color: #ffffff;
+}
+#name {
+    text-align: center;
+    font-size: 2em;
+    color: #ffffff;
+}
+/*styles and positioning for the category buttons*/
+.btnList {
+    list-style-type: none;
+    padding-top: 10px;
+    display: inline;
+}
+.btns {
+    margin: 2px auto 2px auto;
+    padding: 5px;
+    box-shadow: 0 20px 10px 0 #94ADB5;
+    z-index:    1000;
+}
+#btn1 {
+    box-shadow: 0 20px 10px 5px #94ADB5;
+}
+#btn3 {
+    z-index: 1001;
+}
+#btn4 {
+    box-shadow: 0 20px 10px 5px #94ADB5;
+}
+#btn5 {
+    z-index: 1002;
+}
+#btn6 {
+    box-shadow: 0 20px 10px 5px #94ADB5;
+    z-index: 1001;
+}
+
+/*styles and positioning for the window loading icon*/
+#spinner {
+    position: fixed;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background: url('https://49.media.tumblr.com/8be748a77e2454191b6e299e9084e2e2/tumblr_o53q8sMoyW1v4ifixo1_75sq.gif') 50% 50% no-repeat #bce8f1;
+}
+/* When the body has the loading class, we turn
+   the scrollbar off with overflow:hidden */
+body.loading {
+    overflow: hidden;
+}
+
+/* Anytime the body has the loading class, our
+   modal element will be visible */
+body.loading .modal {
+    display: block;
+}
