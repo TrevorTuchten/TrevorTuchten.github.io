@@ -3,6 +3,26 @@ html {
     width: 100%;
     height: 100%;
 }
+@media screen and (max-width: 800px){
+    html{
+        overflow: auto !important;
+        z-index: 0;
+    }
+    body{
+        overflow: auto !important;
+        z-index: 0;
+    }
+    #main-navbar {
+        overflow: hidden;
+    }
+}
+@media screen and (max-width: 480px){
+    #yk {
+        position: absolute !important;
+        max-height: 150px;
+        overflow: auto !important;
+    }
+}
 body,
 h1,
 h2,
@@ -16,9 +36,10 @@ h6 {
 .topnav {
     font-size: 16px;
     border-bottom: 1px outset rgba(192, 192, 192, 0.5);
-    background: rgba(192, 192, 192, 0.9);
+    background: rgba(192, 192, 192, 0.5);
     box-shadow: 0 1px rgba(0, 0, 0, 0.3);
 }
+
 .topnav ul.navbar-nav li a {
     background: rgba(28, 28, 28, 0.1);
     color: #000;
@@ -44,17 +65,16 @@ h6 {
 }
 /*top background*/
 .intro-header {
-    height: 855px;
+    height: 800px;
     padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
     padding-bottom: 50px;
     text-align: center;
     background: url('http://d3q3vb188evqe3.cloudfront.net/wp-content/uploads/2013/03/Depositphotos_2389611_m-1500x1000.jpg?01a256') no-repeat center center fixed;
     background-size: cover;
-    height: 855px;
 }
 .bg-overlay {
     background:rgba(0,0,0, 0.3);
-    height: 855px;
+    height: 800px;
 }
 .intro-message {
     position: relative;
@@ -91,7 +111,7 @@ h6 {
 
     ul.intro-social-buttons > li {
         display: block;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         padding: 0;
     }
 
@@ -136,12 +156,12 @@ hr.intro-divider {
     padding: 50px 0;
     background: url('http://oldtownclovis.org/wp-content/uploads/2011/10/OldTownClovisSign-sm.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 1000px;
+    height: 1005px;
 }
 .bg-overlay2 {
     margin-top: -50px;
     background: rgba(255, 255, 255, 0.2);
-    height: 1000px;
+    height: 1005px;
 }
 /*self-taught*/
 .container .link {
@@ -178,6 +198,11 @@ h2.section-heading {
     border: 1px outset rgba(255, 255, 255, 0.3);
     box-shadow: 1px 1px 1px rgba(0,0,0,0.6);
 }
+@media (max-width:600px) {
+    #imgCircle {
+        display: none;
+    }
+}
 /* Portfolio section*/
 section {
     color: black;
@@ -189,8 +214,8 @@ section {
     color: #000;
 }
 
-#small-text {
-    color: white;
+.small-text {
+    color: #ffffff;
 }
 
 /*.portfolio-item {
@@ -309,14 +334,13 @@ section {
     padding: 100px 0;
     background: url('http://www.tntgenesis.com/wp-content/uploads/2016/01/jumbotron_exp.jpg') no-repeat center center fixed;
     background-size: cover;
-    height: 755px;
+    height: 700px;
 }
 
 .bg-overlay4 {
     margin-top: -100px;
     padding: 100px 0;
-
-    height: 755px;
+    height: 700px;
 }
 
 .banner ul {
@@ -355,4 +379,20 @@ footer {
 
 p.copyright {
     margin: 15px 0 0;
+}
+.social {
+    display: inline-block;
+    text-align: left;
+    max-height: 25px;
+}
+#faceB {
+    position: relative;
+    top: -6px;
+}
+#soc {
+    padding-top: 10px;
+}
+#twit {
+    position: relative;
+    left: -38px;
 }
