@@ -10,4 +10,4 @@
 
   * **Class Assignments** -   
   A collection of all completed assignments finished in Bitwsise Javascript class.  
-	  * [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/bitwise/classAssignments).
+	  * [Assignment Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/bitwise/classAssignments).
