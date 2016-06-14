@@ -53,6 +53,8 @@
 	  * [gh-page(live demo)](http://TrevorTuchten.github.io/bitwise/ToDoApp/).  
 	  * [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/bitwise/ToDoApp).
 
+
   * **Class Assignments** -   
-A collection of all completed assignments finished in Bitwsise Javascript class.   
-      * [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/bitwise/classAssignments).
+  A collection of all completed assignments finished in Bitwsise Javascript class.  
+	  * [gh-page(live demo)](http://TrevorTuchten.github.io/bitwise/ToDoApp/).  
+	  * [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/bitwise/classAssignments).
