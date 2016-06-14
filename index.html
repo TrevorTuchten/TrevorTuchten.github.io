@@ -1,23 +1,55 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" itemscope itemtype="http://schema.org/Article">
 <head>
+
+    <!-- Place this data between the <head> tags of your website -->
+    <title>TNTgenesis Web Design Studio | Inspiring Web Innovations</title>
+    <meta name="description" content="Trevor Tuchten - Porfolio | Web Developer Available for Hire" />
+
+    <!-- Schema.org markup for Google+ -->
+    <meta itemprop="name" content="TNTgenesis Web Design Studio | Inspiring Web Innovations">
+    <meta itemprop="description" content="Trevor Tuchten - Porfolio | Web Developer Available for Hire">
+    <meta itemprop="image" content="https://40.media.tumblr.com/b1bd7536b53e55e5b88686cdfc8264e9/tumblr_o3bf4pf5E51v4ifixo1_540.png">
+
+    <!-- Twitter Card data -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@tnt_genesis_">
+    <meta name="twitter:title" content="TNTgenesis Web Design Studio | Inspiring Web Innovations | Developer Available for Hire">
+    <meta name="twitter:description" content="Trevor Tuchten - Porfolio | Web Developer Available for Hire">
+    <meta name="twitter:creator" content="@tnt_genesis_">
+    <!-- Twitter summary card with large image must be at least 280x150px -->
+    <meta name="twitter:image:src" content="https://40.media.tumblr.com/b1bd7536b53e55e5b88686cdfc8264e9/tumblr_o3bf4pf5E51v4ifixo1_540.png">
+
+    <!-- Open Graph data -->
+    <meta property="og:title" content="TNTgenesis Web Design Studio | Inspiring Web Innovations" />
+    <meta property="og:url" content="http://www.trevortuchten.com/" />
+    <meta property="og:image" content="http://www.trevortuchten.com/images/TNTportfolio.jpg" />
+    <meta property="og:description" content="Trevor Tuchten - Porfolio | Web Developer Available for Hire" />
+    <meta property="og:site_name" content="TNTgenesis Web Design Studio | Inspiring Web Innovations" />
+
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="google-site-verification" content="NNnFO0FSyDW3FbeICmmGEKKGJjDxei4LYaRWxforXuA" />
+    <meta name="msvalidate.01" content="1891F9AE15218DEAB04E450119BA475E" />
+    <link rel="alternate" href="http://trevortuchten.com" hreflang="en-us" />
+    <link rel=”author” href=”https://plus.google.com/u/1/b/114368422650886999537/+Tntgenesis/about/p/pub/">
     <link rel="icon" href="https://pbs.twimg.com/profile_images/659632166796570625/Y1wKXuCn.jpg">
-	<!-- Latest compiled and minified CSS -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous" rel="stylesheet">
-    <!-- Optional theme -->
-    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" integrity="sha384-fLW2N01lMqjakBkx3l/M9EahuwpSfeNvV63J5ezn3uZzapT0u7EYsXMjQV+0En5r" crossorigin="anonymous" rel="stylesheet">
-	<link href="TrevorTuchten.github.io/portfolioSite/css/styles.css" rel="stylesheet">
-	<title>TNTgenesis Web Design Studio</title>
+    <link rel="canonical" href="https://dev.twitter.com/web/tweet-button">
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
+    <link href="css/bootstrap-theme.min.css" rel="stylesheet">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/styles.css" rel="stylesheet">
+
 </head>
 <body>
 <!-- Navigation -->
-<nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+
+<nav id="main-navbar" class="navbar navbar-default navbar-fixed-top topnav">
     <div class="container topnav">
         <!-- Brand and toggle get grouped for better mobile display -->
         <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
                 <span class="sr-only">Toggle navigation</span>
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
@@ -29,18 +61,26 @@
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                 <ul class="nav navbar-nav navbar-right">
                     <li>
-                        <a href="#home">Home</a>
+                        <a href="#TNThome">Home</a>
                     </li>
                     <li>
-                        <a href="#about">About</a>
+                        <a href="#aboutTNT">About</a>
                     </li>
                     <li>
-                        <a href="#portfolio">Portfolio</a>
+                        <a href="#TNTportfolio">Portfolio</a>
                     </li>
                    <li>
-                        <a href="#contact">Contact</a>
+                        <a href="#contactTNT">Contact</a>
                     </li>
                 </ul>
+                <div>
+                    <span class="fb-like" id="faceB" data-href="http://trevortuchten.com/" data-layout="button_count" data-action="like" data-show-faces="false" data-share="true"></span>
+                    <span type=none class="social" id="soc">
+                        <div class="g-plusone" data-href="http://www.trevortuchten.com"></div>
+                    </span>
+                    <span type=none class="social" id="twit" style="padding-left: 10px">
+                        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://www.trevortuchten.com" data-via="tnt_genesis_">Tweet</a></span>
+                </div>
             </div>
             <!-- /.navbar-collapse -->
         </div>
@@ -48,12 +88,13 @@
     </nav>
 
 
+
     <!-- Header -->
-    <a name="home"></a>
+    <a id="TNThome"></a>
     <div class="intro-header">
       <div class="bg-overlay">
         <div class="container">
-  
+
 
             <div class="row">
                 <div class="col-lg-12">
@@ -72,10 +113,10 @@
                                 <a href="https://www.linkedin.com/in/tntuchten" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                             </li>
                           <li>
-                                <a href="http://codepen.io/tntgenesis/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">Codepen</span></a>
+                                <a href="http://codepen.io/tntgenesis/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
                             </li>
                             <li>
-                                <a href="http://www.freecodecamp.com/trevortuchten" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">FreeCodeCamp</span></a>
+                                <a href="http://www.freecodecamp.com/trevortuchten" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
                             </li>
                         </ul>
                     </div>
@@ -90,28 +131,28 @@
 
  <!-- Page Content -->
 
-	<a  name="about"></a>
+	<a id="aboutTNT"></a>
     <div class="content-section-a">
       <div class="bg-overlay2">
         <div class="container">
             <div class="row">
-                <div class="col-lg-5 col-sm-6">
-                    
+                <div class="col-lg-5 col-sm-6 col-xs-10">
+
                     <div class="clearfix"></div>
                   <h2 class="section-heading">TNTGenesis Web Design Studio.</h2>
-                  </br>
-                    <p class="lead">I'm a <a class="link" target="_blank" href="http://www.freecodecamp.com/trevortuchten">self taught</a> web designer, developer, co-founder and entrepreneur based in California.</br>
-              I'm currently part of a small web development team in an upcoming start-up, building web and mobile applications.</br> 
-My passion is to use technology based solutions, to help solve real world challenges.</br>
-Competencies:</br>
-Languages and Frameworks:</br>
-Javascript, HTML5, CSS3, jQuery, Bootstrap3, Angular.js</br>
-Tools & expertise:</br>
-Git, Node.js, Responsive Web Design, Agile Methodologies.
-</p>
+                  <br>
+                    <p class="lead">I'm a <a class="link" target="_blank" href="http://www.tntgenesis.com/blog/become-a-web-developer/building-blocks-learn-to-web-design/">self taught</a> web designer, developer, co-founder and entrepreneur based in California.<br>
+                        I'm currently part of a small web development team in an upcoming start-up, building web and mobile applications.<br>
+                        My passion is to use technology based solutions, to help solve real world challenges.<br>
+                        Competencies:<br>
+                        Languages and Frameworks:<br>
+                        HTML5, CSS3, PHP, SQL, Javascript, jQuery, Angular.js, AJAX, Bootstrap, WordPress<br>
+                        Tools & expertise:<br>
+                        Git, Responsive Web Design, Agile Methodologies.
+                    </p>
                 </div>
-                <div class="col-lg-5 col-lg-offset-2 col-sm-6 collapse navbar-collapse">
-                    <img class="img-circle img-responsive" src="https://36.media.tumblr.com/7b3386accd12e2cee3a3503e505b6112/tumblr_o34iko6ChP1v4ifixo1_400.jpg" alt="#">
+                <div class="col-lg-5 col-lg-offset-2 col-sm-6">
+                    <img class="img-circle img-responsive" id="imgCircle" src="https://36.media.tumblr.com/7b3386accd12e2cee3a3503e505b6112/tumblr_o34iko6ChP1v4ifixo1_400.jpg" alt="Trevor Tuchten Profile Pic.">
                 </div>
             </div>
 
@@ -119,9 +160,9 @@ Git, Node.js, Responsive Web Design, Agile Methodologies.
         <!-- /.container -->
       </div>
      </div>
-  
+
      <!-- Portfolio Grid Section -->
-   <a  name="portfolio"></a>
+   <a id="TNTportfolio"></a>
     <section id="portfolio" class="bg-light-gray bounds">
         <div class="container">
             <div class="row">
@@ -129,106 +170,126 @@ Git, Node.js, Responsive Web Design, Agile Methodologies.
                     <h2 class="section-heading" style="color: #ffffff">Portfolio Powered by TNT.</h2>
                     <h3 id="below-section" class="section-subheading text-muted" style="color: #ffffff">Below you'll find some of my recent work.</h3>
                 </div>
-            </div>   
-              <!-- Portfolio img1 -->
+            </div>
+            <!-- Portfolio img1 -->
             <div class="row">
                 <div class="col-md-4 col-sm-4 portfolio-item portfolio2">
                     <a href="http://www.guidedhoperecovery.com/" class="portfolio-link" target="_blank" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-3x"></i>
+                                <i class="fa fa-bomb fa-4x"></i>
                             </div>
                         </div>
-                        <img src="https://40.media.tumblr.com/ea1c4bdef3003e906f47c54d05a4d9e1/tumblr_o34hdtJpzG1v4ifixo1_540.png" class="img-responsive" alt="">
+                        <img src="https://40.media.tumblr.com/ea1c4bdef3003e906f47c54d05a4d9e1/tumblr_o34hdtJpzG1v4ifixo1_540.png" class="img-responsive" alt="Guided Hope Recovery Homepage">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Guided Hope Recovery</h4>
-                        <p id="small-text" class="text-muted">Bootstrap, jQuery, Wordpress and SQL</p>
+                        <p class="text-muted small-text">Bootstrap, jQuery, Wordpress and SQL</p>
                     </div>
                 </div>
-              <!-- End of Portfolio img1 -->
-              <!-- Portfolio img2 -->
+                <!-- End of Portfolio img1 -->
+                <!-- Portfolio img2 -->
                 <div class="col-md-4 col-sm-4 portfolio-item">
-                    <a href="http://www.tntgenesis.com/social/" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <a href="https://www.tntgenesis.com/social/" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-3x"></i>
+                                <i class="fa fa-bomb fa-4x"></i>
                             </div>
                         </div>
-                        <img src="https://41.media.tumblr.com/1bb51245366cf7d2ed615777511d43bc/tumblr_o34hdtJpzG1v4ifixo3_540.png" class="img-responsive" alt="">
+                        <img src="https://41.media.tumblr.com/1bb51245366cf7d2ed615777511d43bc/tumblr_o34hdtJpzG1v4ifixo3_540.png" class="img-responsive" alt="TNTgenesis Social Site">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Social Genesis</h4>
-                        <p id="small-text" class="text-muted">Bootstrap, jQuery, Wordpress and SQL</p>
+                        <p class="text-muted small-text">Bootstrap, jQuery, Wordpress and SQL</p>
                     </div>
                 </div>
-              <!-- End of Portfolio img2 -->
-              <!-- Portfolio img3 -->
+                <!-- End of Portfolio img2 -->
+
+                <!-- Portfolio img3 -->
                 <div class="col-md-4 col-sm-4 portfolio-item">
                     <a href="http://www.wcfisheries.com/" target="_blank" class="portfolio-link" data-toggle="modal">
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-3x"></i>
+                                <i class="fa fa-bomb fa-4x"></i>
                             </div>
                         </div>
-                        <img src="https://36.media.tumblr.com/34cf9f256fa9b98a8195c5a553bb2c58/tumblr_o34hdtJpzG1v4ifixo2_540.png" class="img-responsive" alt="">
+                        <img src="https://36.media.tumblr.com/a0d80035411cd9d45a7c4118410b2d8a/tumblr_o3jcutEJMY1v4ifixo1_540.png" class="img-responsive" alt="Willow Creek Fisheries Homepage">
                     </a>
                     <div class="portfolio-caption">
                         <h4>Willow Creek Fisheries</h4>
-                        <p id="small-text" class="text-muted">Bootstrap, jQuery, Wordpress and SQL</p>
+                        <p class="text-muted small-text">Bootstrap, jQuery, Wordpress and SQL</p>
                     </div>
                 </div>
             </div>
 
-              <!-- End of Portfolio img3 -->
-              
-              <!-- Portfolio img4 -->
-                <div class="col-md-6 col-sm-6 portfolio-item">
-                    <a href="http://trevortuchten.github.io/ToDoApp/" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-3x"></i>
-                            </div>
+            <!-- End of Portfolio img3 -->
+
+            <!-- Portfolio img4 -->
+            <div class="col-md-6 col-sm-6 portfolio-item">
+                <a href="TrevorTuchten.github.io/bitwise/ToDoApp/" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-bomb fa-4x"></i>
                         </div>
-                        <img src="https://41.media.tumblr.com/37351ec39de4956cafbf977c6697dc63/tumblr_o34jr0R7ML1v4ifixo1_540.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Task Manager</h4>
-                        <p id="small-text" class="text-muted">Bootstrap and Vanilla JavaScript</p>
                     </div>
+                    <img src="https://41.media.tumblr.com/37351ec39de4956cafbf977c6697dc63/tumblr_o34jr0R7ML1v4ifixo1_540.png" class="img-responsive" alt="Custom Task manager on Github">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Trevor's Task Manager</h4>
+                    <p class="text-muted small-text">Bootstrap and Vanilla JavaScript</p>
                 </div>
-              <!-- End of Portfolio img4 -->
-              
-              <!-- Portfolio img5 -->
-                <div class="col-md-6 col-sm-6 portfolio-item">
-                    <a href="http://trevortuchten.github.io/jsPlay/phsycSq/" target="_blank" class="portfolio-link" data-toggle="modal">
-                        <div class="portfolio-hover">
-                            <div class="portfolio-hover-content">
-                                <i class="fa fa-fire fa-3x"></i>
-                            </div>
-                        </div>
-                        <img src="https://40.media.tumblr.com/fb01e198ce9722cd6f49b50d7d1a459e/tumblr_o34mapAj9I1v4ifixo1_540.png" class="img-responsive" alt="">
-                    </a>
-                    <div class="portfolio-caption">
-                        <h4>Psychedelic Squares</h4>
-                        <p id="small-text" class="text-muted">CSS3 and Vanilla Javascript</p>
-                    </div>
-                </div>
-              <!-- End of Portfolio img5 -->
             </div>
+            <!-- End of Portfolio img4 -->
+
+            <!-- Portfolio img5 -->
+            <div class="col-md-6 col-sm-6 portfolio-item">
+                <a href="TrevorTuchten.github.io/personalProjects/phsycSq/" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-bomb fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="https://40.media.tumblr.com/fb01e198ce9722cd6f49b50d7d1a459e/tumblr_o34mapAj9I1v4ifixo1_540.png" class="img-responsive" alt="Fun CSS3 on Github">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Trevor's Psychedelic Squares</h4>
+                    <p class="text-muted small-text">CSS3 and Vanilla Javascript</p>
+                </div>
+            </div>
+            <!-- End of Portfolio img5 -->
+
+            <!-- Portfolio img6 -->
+            <div class="col-md-12 col-sm-12 portfolio-item">
+                <a href="TrevorTuchten.github.io/freeCodeCampProjects/codeCampQuoteGen/" target="_blank" class="portfolio-link" data-toggle="modal">
+                    <div class="portfolio-hover">
+                        <div class="portfolio-hover-content">
+                            <i class="fa fa-bomb fa-4x"></i>
+                        </div>
+                    </div>
+                    <img src="https://36.media.tumblr.com/a0e387b8b3620ba5b5f5ca811f457147/tumblr_o4k11ms8c31v4ifixo1_540.png" class="img-responsive" alt="Fun CSS3 on Github">
+                </a>
+                <div class="portfolio-caption">
+                    <h4>Trevor's Quote Generator</h4>
+                    <p class="text-muted small-text">CSS3, Bootstrap, Jquery, AJAX</p>
+                </div>
+            </div>
+            <!-- End of Portfolio img6 -->
+
+        </div>
     </section>
 
-	<a  name="contact"></a>
+	<a  id="contactTNT"></a>
     <div class="banner">
       <div class="bg-overlay4">
-        <div class="container">         
+        <div class="container">
             <div class="row">
-                <div class="col-lg-6">
-                  <h2 class="connect" style="color: #ffffff">Connect with TNTgenesis Web Design Studio:<a href="mailto:trevor.tuchten@tntgenesis.com" target="_top"> trevor.tuchten@tntgenesis.com</a></h2>
+                <div class="col-lg-6 col-sm-12 col-xs-12">
+                    <h2 class="connect" style="color: #ffffff">Connect with TNTgenesis Web Design Studio: <a href="http://www.tntgenesis.com/contact-us/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-bomb fa-fw"></i> <span class="network-name">Contact</span></a></h2>
                 </div>
-              </br>
-      
-                <div class="col-lg-6">
+              <br>
+
+
+                <div class="col-lg-6 col-sm-12 col-xs-12" >
                     <ul class="list-inline banner-social-buttons">
                         <li>
                                 <a href="https://twitter.com/tnt_genesis_" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
@@ -240,7 +301,7 @@ Git, Node.js, Responsive Web Design, Agile Methodologies.
                                 <a href="https://www.linkedin.com/in/tntuchten" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span class="network-name">Linkedin</span></a>
                             </li>
                             <li>
-                                <a href="http://codepen.io/tntgenesis/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">Codepen</span></a>
+                                <a href="http://codepen.io/tntgenesis/" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
                             </li>
                             <li>
                                 <a href="http://www.freecodecamp.com/trevortuchten" target="_blank" class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span class="network-name">freeCodeCamp</span></a>
@@ -252,12 +313,11 @@ Git, Node.js, Responsive Web Design, Agile Methodologies.
     </div>
 </div>
 </div>
-</div>
     <!-- /.banner -->
 
     <!-- Footer -->
     <footer>
-    
+
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -267,26 +327,25 @@ Git, Node.js, Responsive Web Design, Agile Methodologies.
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#about">About</a>
+                            <a href="#aboutTNT">About</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#portfolio">Portfolio</a>
+                            <a href="#TNTportfolio">Portfolio</a>
                         </li>
                         <li class="footer-menu-divider">&sdot;</li>
                         <li>
-                            <a href="#contact">Contact</a>
+                            <a href="#contactTNT">Contact</a>
                         </li>
                     </ul>
-                    <p class="copyright text-muted small">Copyright &copy; TNTgenesis Web Design Studio 2015. All Rights Reserved</p>
+                    <p class="copyright text-muted small">Copyright &copy; <a href="http://www.tntgenesis.com">TNTgenesis.com</a> Web Design Studio 2015. All Rights Reserved</p>
                 </div>
             </div>
         </div>
     </footer>
 <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<!-- Latest compiled and minified JavaScript -->
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
-<script src="https://use.fontawesome.com/bff2e41004.js"></script>
+<script src="js/scripts.js"></script>
+<script src="js/bootstrap.min.js"></script>
 </body>
 </html>
