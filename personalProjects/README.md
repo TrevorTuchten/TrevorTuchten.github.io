@@ -1,7 +1,7 @@
 - Personal Projects -
 =======
 
-**WhatToDo** -  
+**WhaToDo** -  
  -----------  
 
 A small project utilizing Google Places API and geolocation to find local things to do. Used jQuery for app stucture and data integration. Bootstrap was used for screen reactivness.
