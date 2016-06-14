@@ -38,6 +38,7 @@ h6 {
     border-bottom: 1px outset rgba(192, 192, 192, 0.5);
     background: rgba(192, 192, 192, 0.5);
     box-shadow: 0 1px rgba(0, 0, 0, 0.3);
+
 }
 
 .topnav ul.navbar-nav li a {
@@ -59,6 +60,7 @@ h6 {
     background: rgba(255, 255, 255, 0.5);
     color: #000;
 }
+
 .lead {
     font-size: 18px;
     font-weight: 400;
@@ -227,12 +229,12 @@ section {
 /*Portfolio items*/
 #portfolio .portfolio-item {
     margin: 0 0 15px 0;
-    border: 1px outset #ffffff;
 }
 
 #portfolio .portfolio-item:hover {
     transition: 0.5s;
     box-shadow: 5px 5px 5px rgba(0,0,0,0.9);
+    background-color: #388fa6;
 }
 
 #portfolio .portfolio-item .portfolio-link {
