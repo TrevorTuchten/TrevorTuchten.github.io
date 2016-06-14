@@ -19,10 +19,10 @@
 - FreeCodeCamp -
 -----------
 
- ** FreeCodeCamp is an amazing online tool for developing coding abilities. They present you with a problem and a couple helpful links on how to think about solving the problem and coding the solution. They also present you with larger projects, that take some serious effort to complete increasing in difficulty as you progress. They award certifications upon completeion of Front End development Data Visuilization and Full Stack development granting you the ability for working with non-profit orginizations. You can see my progress [here](https://www.freecodecamp.com/trevortuchten). **  
+ **FreeCodeCamp is an amazing online tool for developing coding abilities. They present you with a problem and a couple helpful links on how to think about solving the problem and coding the solution. They also present you with larger projects, that take some serious effort to complete increasing in difficulty as you progress. They award certifications upon completeion of Front End development Data Visuilization and Full Stack development granting you the ability for working with non-profit orginizations. You can see my progress [here](https://www.freecodecamp.com/trevortuchten).**  
   * **Local Weather App** -   
   Used jQuery for app stucture and data integration. Bootstrap was used for screen reactivness. Geolocation and Weather API's used to collect Data.  
-	  * [gh-page(live demo)](http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWeatherApp/). ** Will not work on chrome 50 for geolocation security reasons. **   
+	  * [gh-page(live demo)](http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWeatherApp/). **Will not work on chrome 50 for geolocation security reasons.**   
 	  * [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/freeCodeCampProjects/codeCampWeatherApp).
 
 
@@ -47,7 +47,7 @@
 - Bitwise -
 -----------
 
-** Bitwise is an amazing local bootcamp here in Fresno, CA. They offer many courses for people wanting to become a professional developer, from computer language courses to resume and mock interview guidance. They utilize small classroom settings for maximum instructor/student interaction. They offer 24/7 quite work space, gym, cafe among many other membership benifits. **
+**Bitwise is an amazing local bootcamp here in Fresno, CA. They offer many courses for people wanting to become a professional developer, from computer language courses to resume and mock interview guidance. They utilize small classroom settings for maximum instructor/student interaction. They offer 24/7 quite work space, gym, cafe among many other membership benifits.**
 * **To Do List (Final Project)** -   
    Used Javascript for app stucture and and user interaction. Bootstrap was used for screen reactivness.  
 	* [gh-page(live demo)](http://TrevorTuchten.github.io/bitwise/ToDoApp/). 
