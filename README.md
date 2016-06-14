@@ -14,6 +14,7 @@
   A little visual pattern created with CSS transitions. Javascript used for input validation.  
 	  * [gh-page(live demo)](http://TrevorTuchten.github.io/personalProjects/phsycSq/).  
 	  * [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/personalProjects/phsycSq).
+-----------
 
 
 - FreeCodeCamp -
@@ -42,6 +43,7 @@
   Used jQuery for data integration and user input validation. Bootstrap was used for screen reactivness. Wiki API used for live search.  
 	  * [gh-page(live demo)](http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWikiViewer/).  
 	  * [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/freeCodeCampProjects/codeCampWikiViewer).
+-----------
 
 
 - Bitwise -
