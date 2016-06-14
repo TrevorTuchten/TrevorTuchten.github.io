@@ -56,5 +56,4 @@
 
   * **Class Assignments** -   
   A collection of all completed assignments finished in Bitwsise Javascript class.  
-	  * [gh-page(live demo)](http://TrevorTuchten.github.io/bitwise/ToDoApp/).  
 	  * [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/bitwise/classAssignments).
