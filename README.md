@@ -1,33 +1,34 @@
-- Personal Projects - Bitwise - FreeCodeCamp
+- Personal Projects - Bitwise - FreeCodeCamp -
 =======
 
-Sub-heading
+- Personal Projects -
 -----------
 
-### Another deeper heading
+  * **WhatToDo** -   
+  A small project utilizing Google Places API and geolocation to find local things to do. Used jQuery for app stucture and data integration. Bootstrap was used for screen reactivness.  
+  [gh-page(live demo)](http://TrevorTuchten.github.io/personalProjects/whatodo/).  [Project Repository](http://https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/personalProjects/whatodo).
 
-Markdown is plain text formatting designed to convert
-to HTML
+  * **Psychedelic Squares** -   
+  A little visual pattern created with CSS transitions. Javascript used for input validation.  
+  [gh-page(live demo)](http://TrevorTuchten.github.io/personalProjects/phsycSq/).  [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/personalProjects/phsycSq).
 
-Paragraphs are separated
-by a blank line.
 
-Leave 2 spaces at the end of a line to do a
-line break
+- FreeCodeCamp -
+-----------
 
-Text attributes *italic*, **bold**,
-`monospace`, ~~strikethrough~~ .
+ ** FreeCodeCamp is an amazing online tool for developing coding abilities. They present you with a problem and a couple helpful links on how to think about solving the problem and coding the solution. They also present you with larger projects, that take some serious effort to complete increasing in difficulty as you progress. They award certifications upon completeion of Front End development Data Visuilization and Full Stack development granting you the ability for working with non-profit orginizations. You can see my progress [here](https://www.freecodecamp.com/trevortuchten). **  
+  * **Local Weather App** -   
+  Used jQuery for app stucture and data integration. Bootstrap was used for screen reactivness. Geolocation and Weather API's used to collect Data.  
+  [gh-page(live demo)](http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWeatherApp/).  [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/freeCodeCampProjects/codeCampWeatherApp).
 
-A [link](http://example.com).
+  * **Tweetable Quote Generator** -   
+  Used Heavy CSS for seen creation. Used jQuery for functionality and data injection. Twitter and Random Quotes API's used.  
+  [gh-page(live demo)](http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampQuoteGen/).  [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/freeCodeCampProjects/codeCampQuoteGen).
 
-Unordered list:
+  * **Twitch TV List** -   
+  Used jQuery for app stucture, data integration and element manipulation. Bootstrap was used for screen reactivness. Utilized Twitch API to show user live user attributes.  
+  [gh-page(live demo)](http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampTwitchtv/).  [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/freeCodeCampProjects/codeCampTwitchtv).
 
-  * apples
-  * oranges
-  * pears
-
-Numbered list:
-
-  1. apples
-  2. oranges
-  3. pears
+  * **Wikipedia Viewer** -   
+  Used jQuery for data integration and user input validation. Bootstrap was used for screen reactivness. Wiki API used for live search.  
+  [gh-page(live demo)](http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWikiViewer/).  [Project Repository](https://github.com/TrevorTuchten/TrevorTuchten.github.io/tree/master/freeCodeCampProjects/codeCampWikiViewer).
