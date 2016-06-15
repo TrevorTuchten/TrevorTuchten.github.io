@@ -353,9 +353,16 @@ ul.banner-social-buttons > li {
 ul.banner-social-buttons > li:last-child {
     margin-bottom: 0;
 }
-h2.connect {
+.connect {
     margin: 0;
-    color: rgba(0, 0, 0, 0.9);
+    color: #ffffff;
+}
+.connect a {
+    color: #ec971f;
+}
+.connect a:hover {
+    color: #ec5a28;
+    text-decoration: none;
 }
 
 footer {
