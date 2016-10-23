@@ -179,14 +179,14 @@ hr.intro-divider {
 
 .bg-overlay2 {
 	margin-top: -50px;
-	background: rgba(255, 255, 255, 0.2);
+	background: rgba(52, 52, 52, 0.6);
 	height: 1010px;
 }
 
 /*body text link*/
 .container .link {
-	color: #127799;
-	text-shadow: #000000 1px 1px 5px;
+	color: #1384ae;
+	text-shadow: #000000 1px 1px 30px;
 	font-weight: bolder;
 	font-size: 22px;
 }
@@ -200,14 +200,16 @@ hr.intro-divider {
 h2.section-heading {
 	margin-top: 25px;
 	font-size: 3em;
-	color: rgba(0, 0, 0, 0.9);
+	color: #ffffff;
+	text-shadow: #000000 1px 1px 30px;
 }
 
 /*text*/
 .content-section-a p {
 	font-size: 22px;
 	font-weight: bold;
-	color: #000;
+	color: #ffffff;
+	text-shadow: #000000 1px 1px 30px;
 }
 
 .content-section-a p a {
