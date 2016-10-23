@@ -9,12 +9,12 @@ html {
 		overflow: auto !important;
 		z-index: 0;
 	}
-	
+
 	body {
 		overflow: auto !important;
 		z-index: 0;
 	}
-	
+
 	#main-navbar {
 		overflow: hidden;
 	}
@@ -44,7 +44,7 @@ h6 {
 	border-bottom: 1px outset rgba(192, 192, 192, 0.5);
 	background: rgba(192, 192, 192, 0.5);
 	box-shadow: 0 1px rgba(0, 0, 0, 0.3);
-	
+
 }
 
 .topnav ul.navbar-nav li a {
@@ -76,8 +76,8 @@ h6 {
 
 /*top background*/
 .intro-header {
-	height: 950px;
-	padding-top: 50px; /* If you're making other pages, make sure there is 50px of padding to make sure the navbar doesn't overlap content! */
+	height: 800px;
+	padding-top: 50px;
 	padding-bottom: 50px;
 	text-align: center;
 	background: url('http://d3q3vb188evqe3.cloudfront.net/wp-content/uploads/2013/03/Depositphotos_2389611_m-1500x1000.jpg?01a256') no-repeat center center fixed;
@@ -86,7 +86,7 @@ h6 {
 
 .bg-overlay {
 	background: rgba(0, 0, 0, 0.3);
-	height: 950px;
+	height: 800px;
 }
 
 .intro-message {
@@ -116,24 +116,32 @@ h6 {
 }
 
 @media (max-width: 767px) {
+	.intro-header {
+		height: 650px;
+	}
+
+	.bg-overlay {
+		height: 650px;
+	}
+
 	.intro-message {
 		padding-bottom: 15%;
 	}
-	
+
 	.intro-message > h1 {
 		font-size: 3em;
 	}
-	
+
 	ul.intro-social-buttons > li {
 		display: block;
 		margin-bottom: 10px;
 		padding: 0;
 	}
-	
+
 	ul.intro-social-buttons > li:last-child {
 		margin-bottom: 0;
 	}
-	
+
 	.intro-divider {
 		width: 100%;
 	}
@@ -174,13 +182,13 @@ hr.intro-divider {
 	padding: 50px 0;
 	background: url('http://oldtownclovis.org/wp-content/uploads/2011/10/OldTownClovisSign-sm.jpg') no-repeat center center fixed;
 	background-size: cover;
-	height: 1010px;
+	height: 825px;
 }
 
 .bg-overlay2 {
 	margin-top: -50px;
 	background: rgba(52, 52, 52, 0.6);
-	height: 1010px;
+	height: 825px;
 }
 
 /*body text link*/
@@ -198,7 +206,7 @@ hr.intro-divider {
 }
 
 h2.section-heading {
-	margin-top: 25px;
+	margin-top: 50px;
 	font-size: 3em;
 	color: #ffffff;
 	text-shadow: #000000 1px 1px 30px;
@@ -225,9 +233,26 @@ h2.section-heading {
 	box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.6);
 }
 
+@media (max-width: 767px) {
+	.content-section-a {
+		height: 950px;
+	}
+
+	.bg-overlay2 {
+		height: 950px;
+	}
+}
+
 @media (max-width: 600px) {
 	#imgCircle {
 		display: none;
+	}
+	.content-section-a {
+		height: 1150px;
+	}
+
+	.bg-overlay2 {
+		height: 1150px;
 	}
 }
 
