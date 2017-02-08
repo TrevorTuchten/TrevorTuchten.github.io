@@ -38,78 +38,380 @@
 	<link rel="canonical" href="https://dev.twitter.com/web/tweet-button">
 	<link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css" rel="stylesheet">
 	<link href="http://fonts.googleapis.com/css?family=Lato:300,400,700,300italic,400italic,700italic" rel="stylesheet">
-	<link href="css/bootstrap-theme.min.css" rel="stylesheet">
-	<link href="css/bootstrap.min.css" rel="stylesheet">
+
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+	<!-- Optional theme -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 	<link href="css/styles.css" rel="stylesheet">
 
 </head>
 <body>
-<!-- Navigation -->
+	<!-- Navigation -->
+		<nav id="main-navbar" class="navbar navbar-default navbar-fixed-top topnav">
+			<div class="container topnav">
+				<!-- Brand and toggle get grouped for better mobile display -->
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+							data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+					<a class="navbar-brand topnav" href="http://www.tntgenesis.com/" target="_blank">Trevor Tuchten</a>
+				</div>
+				<!-- Collect the nav links, forms, and other content for toggling -->
+				<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+					<ul class="nav navbar-nav navbar-right">
+						<li>
+							<a href="#TNThome">Home</a>
+						</li>
+						<li>
+							<a href="#aboutTNT">About</a>
+						</li>
+						<li>
+							<a href="#TNTportfolio">Portfolio</a>
+						</li>
+						<li>
+							<a href="#contactTNT">Contact</a>
+						</li>
+					</ul>
+					<div>
+						<span class="fb-like" id="faceB" data-href="http://trevortuchten.com/" data-layout="button_count"
+							  data-action="like" data-show-faces="false" data-share="true"></span>
+						<span class="social" id="soc">
+		                        <span class="g-plusone" data-href="http://www.trevortuchten.com"></span>
+		                    </span>
+						<span class="social" id="twit" style="padding-left: 10px">
+		                        <a href="https://twitter.com/share" class="twitter-share-button"
+								   data-url="http://www.trevortuchten.com" data-via="tnt_genesis_">Tweet</a></span>
+					</div>
+				</div>
+				<!-- /.navbar-collapse -->
+			</div>
+			<!-- /.container -->
+		</nav>
 
-<nav id="main-navbar" class="navbar navbar-default navbar-fixed-top topnav">
-	<div class="container topnav">
-		<!-- Brand and toggle get grouped for better mobile display -->
-		<div class="navbar-header">
-			<button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
-					data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-				<span class="sr-only">Toggle navigation</span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-				<span class="icon-bar"></span>
-			</button>
-			<a class="navbar-brand topnav" href="http://www.tntgenesis.com/" target="_blank">Trevor Tuchten</a>
-		</div>
-		<!-- Collect the nav links, forms, and other content for toggling -->
-		<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-			<ul class="nav navbar-nav navbar-right">
-				<li>
-					<a href="#TNThome">Home</a>
-				</li>
-				<li>
-					<a href="#aboutTNT">About</a>
-				</li>
-				<li>
-					<a href="#TNTportfolio">Portfolio</a>
-				</li>
-				<li>
-					<a href="#contactTNT">Contact</a>
-				</li>
-			</ul>
-			<div>
-				<span class="fb-like" id="faceB" data-href="http://trevortuchten.com/" data-layout="button_count"
-					  data-action="like" data-show-faces="false" data-share="true"></span>
-				<span class="social" id="soc">
-                        <span class="g-plusone" data-href="http://www.trevortuchten.com"></span>
-                    </span>
-				<span class="social" id="twit" style="padding-left: 10px">
-                        <a href="https://twitter.com/share" class="twitter-share-button"
-						   data-url="http://www.trevortuchten.com" data-via="tnt_genesis_">Tweet</a></span>
+	<!-- Header -->
+		<a id="TNThome"></a>
+		<div class="intro-header">
+			<div class="bg-overlay">
+				<div class="container">
+
+
+					<div class="row">
+						<div class="col-lg-12">
+							<div class="intro-message">
+								<h1>TNTgenesis Web Development</h1>
+								<h3>Inspiring Web Innovations.</h3>
+								<hr class="intro-divider">
+								<ul class="list-inline intro-social-buttons">
+									<li>
+										<a href="https://twitter.com/tnt_genesis_" target="_blank"
+										   class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span
+												class="network-name">Twitter</span></a>
+									</li>
+									<li>
+										<a href="https://github.com/TrevorTuchten" target="_blank"
+										   class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span
+												class="network-name">Github</span></a>
+									</li>
+									<li>
+										<a href="https://www.linkedin.com/in/tntuchten" target="_blank"
+										   class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
+												class="network-name">Linkedin</span></a>
+									</li>
+									<li>
+										<a href="http://codepen.io/tntgenesis/" target="_blank"
+										   class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span
+												class="network-name">Codepen</span></a>
+									</li>
+									<li>
+										<a href="http://www.freecodecamp.com/trevortuchten" target="_blank"
+										   class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span
+												class="network-name">freeCodeCamp</span></a>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+
+				</div>
+				<!-- /.container -->
 			</div>
 		</div>
-		<!-- /.navbar-collapse -->
-	</div>
-	<!-- /.container -->
-</nav>
+		<!-- /.intro-header -->
 
+	<!-- Page Content -->
+		<a id="aboutTNT"></a>
+		<div class="content-section-a">
+			<div class="bg-overlay2">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-5 col-sm-6 col-xs-10">
+							<div class="clearfix"></div>
+							<h2 class="section-heading">Trevor Tuchten</h2>
+							<br>
+							<p class="lead">I'm a web designer, developer, founder and entrepreneur based in
+								California.<br>I was recently a software application developer for
+								<strong><a class="link" href="https://www.linkedin.com/company/edit-llc">&#x0003C;&#x0002F;&#x0003E;Edit LLC</a></strong>, creator of
+								<strong><a class="link" href="http://buildicus.com/">Buildicus</a></strong> and
+								<strong><a class="link" href="http://montageforag.com/">Montage</a></strong>	operating out of
+								<strong><a class="link" href="http://bitwiseindustries.com/">Bitwise Industries</a></strong>, The MotherShip of tech. in Fresno, Ca. I was part of the Montage team where I continued to develop and hone my skills with AngularJS 1.x/2, ES2015, Node.js, TypeScript, SASS, LESS, TDD Unit Testing, among other leading technologies. While in this amazing team atmosphere I participated in creating new features and debugging a large, complex application all while using Git and GitHub.<br>
+								I am currently looking for full time work. My passion is to use technology based solutions, to
+								help solve real world challenges.<br></p>
+						</div>
+						<div class="col-lg-5 col-lg-offset-2 col-sm-6">
+							<img class="img-circle img-responsive" id="imgCircle"
+								 src="images/profile.png"
+								 alt="Trevor Tuchten Profile Pic.">
+						</div>
+					</div>
+				</div>
+				<!-- /.container -->
+			</div>
+		</div>
 
-<!-- Header -->
-<a id="TNThome"></a>
-<div class="intro-header">
-	<div class="bg-overlay">
+	<!-- Portfolio Grid Section -->
+	<a id="TNTportfolio"></a>
+	<section id="portfolio" class="bg-light-gray bounds">
 		<div class="container">
-
-
 			<div class="row">
-				<div class="col-lg-12">
-					<div class="intro-message">
-						<h1>TNTgenesis Web Development</h1>
-						<h3>Inspiring Web Innovations.</h3>
-						<hr class="intro-divider">
-						<ul class="list-inline intro-social-buttons">
+				<div class="col-lg-12 text-center">
+					<h2 class="section-heading" style="color: #ffffff">Portfolio Powered by TNT.</h2>
+					<h3 id="below-section" class="section-subheading text-muted" style="color: #ffffff">Below you'll find
+						some of my recent work.</h3>
+				</div>
+			</div>
+
+				<!-- Portfolio img3 -->
+				<div class="col-md-6 col-sm-6 portfolio-item">
+					<a href="http://www.wcfisheries.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/wcfisheriesPage.png"
+							 class="img-responsive" alt="Willow Creek Fisheries Homepage">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Willow Creek Fisheries</h4>
+						<p class="text-muted small-text">Logo/Website Design/Development <br/>WordPress site with custom JS
+							and PHP</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img3 -->
+
+				<!-- Portfolio img4 -->
+				<div class="col-md-6 col-sm-6 portfolio-item"
+					 style="height: 350px">
+					<a href="http://teamandybfit.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/andyBFit.png"
+							 class="img-responsive" alt="Team AndyBFit Homepage">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Team AndyBFit</h4>
+						<p class="text-muted small-text">Logo Design <br/>Site Coming Soon!</p>
+					</div>
+				</div>
+
+				<!-- Portfolio img5 -->
+				<div class="col-md-6 col-sm-6 portfolio-item"
+					 style="height: 350px">
+					<a href="http://www.ggrealtysolutions.com/" target="_blank" class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/ggRealtyPage.png"
+							 class="img-responsive" alt="G & G Realty Solutions Homepage">
+					</a>
+					<div class="portfolio-caption">
+						<h4>G & G Realty Solutions</h4>
+						<p class="text-muted small-text">Logo/Website Design/Development <br/>WordPress site with custom JS
+							and PHP</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img5 -->
+
+				<!-- Portfolio img6 -->
+				<div class="col-md-4 col-sm-4 portfolio-item">
+					<a href="http://TrevorTuchten.github.io/bitwise/ToDoApp/" target="_blank" class="portfolio-link"
+					   data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/toDoApp.png"
+							 class="img-responsive" alt="Custom Task manager on Github">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Trev's Task Manager (Demo)</h4>
+						<p class="text-muted small-text">Bootstrap and Vanilla JavaScript</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img6 -->
+
+				<!-- Portfolio img7 -->
+				<div class="col-md-4 col-sm-4 portfolio-item">
+					<a href="http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampTwitchtv/" target="_blank"
+					   class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/twitchBoard.png"
+							 class="img-responsive" alt="Twitch Stream List on Github">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Code Camp Twitch Stream List (Demo)</h4>
+						<p class="text-muted small-text">jQuery, API, BootStrap</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img7 -->
+
+				<!-- Portfolio img8 -->
+				<div class="col-md-4 col-sm-4 portfolio-item">
+					<a href="http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampQuoteGen/" target="_blank"
+					   class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/QuoteGen.png"
+							 class="img-responsive" alt="Quote Generator on Github">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Trev's Quote Generator (Demo)</h4>
+						<p class="text-muted small-text">jQuery, API, BootStrap</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img8 -->
+
+				<!-- Portfolio img9 -->
+				<div class="col-md-6 col-sm-6 portfolio-item">
+					<a href="https://trevortuchten.github.io/movie-search/" target="_blank" class="portfolio-link"
+					   data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/movieSearch.png"
+							 class="img-responsive" alt="Fun Angular2 on Github">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Trev's Movie Finder</h4>
+						<p class="text-muted small-text">Angular2, WebPack, Sass, RxJS</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img9 -->
+
+				<!-- Portfolio img10 -->
+				<div class="col-md-6 col-sm-6 portfolio-item">
+					<a href="http://TrevorTuchten.github.io/personalProjects/whatodo/" target="_blank" class="portfolio-link"
+					   data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/whatodo.png"
+							 class="img-responsive" alt="Fun Finder on Github">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Trev's Fun Finder (Demo)</h4>
+						<p class="text-muted small-text">jQuery, API, BootStrap</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img10 -->
+
+				<!-- Portfolio img11 -->
+				<div class="col-md-6 col-sm-6 portfolio-item">
+					<a href="http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWeatherApp/" target="_blank"
+					   class="portfolio-link" data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/localWeather.png"
+							 class="img-responsive" alt="Fun CSS3 on Github">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Code Camp Local Weather App (Demo)</h4>
+						<p class="text-muted small-text">jQuery, API, BootStrap</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img11 -->
+
+				<!-- Portfolio img12 -->
+				<div class="col-md-6 col-sm-6 portfolio-item">
+					<a href="http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWikiViewer/"   target="_blank"
+					   class="portfolio-link"
+					   data-toggle="modal">
+						<div class="portfolio-hover">
+							<div class="portfolio-hover-content">
+								<i class="fa fa-bomb fa-4x"></i>
+							</div>
+						</div>
+						<img src="images/wikiViewer.png"
+							 class="img-responsive" alt="Fun CSS3 on Github">
+					</a>
+					<div class="portfolio-caption">
+						<h4>Code Camp Wiki Viewer (Demo)</h4>
+						<p class="text-muted small-text">jQuery, API, BootStrap</p>
+					</div>
+				</div>
+				<!-- End of Portfolio img12 -->
+			</div>
+
+
+		</div>
+	</section>
+
+	<a id="contactTNT"></a>
+	<div class="banner">
+		<div class="bg-overlay4">
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-8 col-sm-12 col-xs-12">
+						<h2 class="connect">Software and Web Developer Available for Freelance / Part-time / Full-time /
+							Contract, Email me.
+							<a href="mailto:trevor.tuchten@tntgenesis.com">
+								<span class="network-name">Here</span>
+							</a>
+						</h2>
+
+						<h2 class="connect">Toggle My
+							<a class="toggleResume">Resume</a><br>
+							<object class="resume hidden" data="files/resForWeb.pdf" type="application/pdf" width="100%" height="500px"> 
+								<p>It appears you don't have a PDF plugin for this browser.
+								No biggie... you can <a href="files/resForWeb.pdf">click here to
+								download the PDF file.</a></p>
+							</object>
+						</h2>
+					</div>
+					<br>
+
+
+					<div class="col-lg-4 col-sm-12 col-xs-12">
+						<ul class="list-inline banner-social-buttons">
 							<li>
-								<a href="https://twitter.com/tnt_genesis_" target="_blank"
-								   class="btn btn-default btn-lg"><i class="fa fa-twitter fa-fw"></i> <span
-										class="network-name">Twitter</span></a>
+								<a href="https://twitter.com/tnt_genesis_" target="_blank" class="btn btn-default btn-lg"><i
+										class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
 							</li>
 							<li>
 								<a href="https://github.com/TrevorTuchten" target="_blank"
@@ -122,9 +424,8 @@
 										class="network-name">Linkedin</span></a>
 							</li>
 							<li>
-								<a href="http://codepen.io/tntgenesis/" target="_blank"
-								   class="btn btn-default btn-lg"><i class="fa fa-codepen fa-fw"></i> <span
-										class="network-name">Codepen</span></a>
+								<a href="http://codepen.io/tntgenesis/" target="_blank" class="btn btn-default btn-lg"><i
+										class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
 							</li>
 							<li>
 								<a href="http://www.freecodecamp.com/trevortuchten" target="_blank"
@@ -134,379 +435,49 @@
 						</ul>
 					</div>
 				</div>
+				<!-- /.container -->
 			</div>
-
 		</div>
-		<!-- /.container -->
 	</div>
-</div>
-<!-- /.intro-header -->
+	<!-- /.banner -->
 
-<!-- Page Content -->
+	<!-- Footer -->
+	<footer>
 
-<a id="aboutTNT"></a>
-<div class="content-section-a">
-	<div class="bg-overlay2">
 		<div class="container">
 			<div class="row">
-				<div class="col-lg-5 col-sm-6 col-xs-10">
-					<div class="clearfix"></div>
-					<h2 class="section-heading">Trevor Tuchten</h2>
-					<br>
-					<p class="lead">I'm a web designer, developer, founder and entrepreneur based in
-						California.<br>I was recently a software application developer for
-						<strong><a class="link" href="https://www.linkedin.com/company/edit-llc">&#x0003C;&#x0002F;&#x0003E;Edit LLC</a></strong>, creator of
-						<strong><a class="link" href="http://buildicus.com/">Buildicus</a></strong> and
-						<strong><a class="link" href="http://www.yourdatacandobetter.com/">Montage</a></strong>	operating out of
-						<strong><a class="link" href="http://bitwiseindustries.com/">Bitwise Industries</a></strong>, The MotherShip of tech. in Fresno,Ca. I was part of the Montage team where I continued to develop and hone my skills with AngularJS 1.x/2, ES2015, Node.js, TypeScript, SASS, LESS, TDD Unit Testing, among other leading technologies. While in this amazing team atmosphere I participated in creating new features and debugging a large, complex application all while using Git and GitHub.<br>
-						I am currently looking for full time work. My passion is to use technology based solutions, to
-						help solve real world challenges.<br></p>
-				</div>
-				<div class="col-lg-5 col-lg-offset-2 col-sm-6">
-					<img class="img-circle img-responsive" id="imgCircle"
-						 src="https://68.media.tumblr.com/7b3386accd12e2cee3a3503e505b6112/tumblr_o34iko6ChP1v4ifixo1_400.jpg"
-						 alt="Trevor Tuchten Profile Pic.">
-				</div>
-			</div>
-		</div>
-		<!-- /.container -->
-	</div>
-</div>
-
-<!-- Portfolio Grid Section -->
-<a id="TNTportfolio"></a>
-<section id="portfolio" class="bg-light-gray bounds">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12 text-center">
-				<h2 class="section-heading" style="color: #ffffff">Portfolio Powered by TNT.</h2>
-				<h3 id="below-section" class="section-subheading text-muted" style="color: #ffffff">Below you'll find
-					some of my recent work.</h3>
-			</div>
-		</div>
-
-		<div class="row">
-			<!-- Portfolio img1 -->
-			<div class="col-md-4 col-sm-4 portfolio-item portfolio2">
-				<a href="http://www.guidedhoperecovery.com/" class="portfolio-link" target="_blank" data-toggle="modal">
-					<div class="portfolio-hover">
-						<div class="portfolio-hover-content">
-							<i class="fa fa-bomb fa-4x"></i>
-						</div>
-					</div>
-					<img src="https://40.media.tumblr.com/ea1c4bdef3003e906f47c54d05a4d9e1/tumblr_o34hdtJpzG1v4ifixo1_540.png"
-						 class="img-responsive" alt="Guided Hope Recovery Homepage">
-				</a>
-				<div class="portfolio-caption">
-					<h4>Guided Hope Recovery</h4>
-					<p class="text-muted small-text">Logo/Website Design/Development <br/>WordPress Site with custom JS
-						and PHP</p>
-				</div>
-			</div>
-			<!-- End of Portfolio img1 -->
-
-			<!-- Portfolio img2 -->
-			<div class="col-md-4 col-sm-4 portfolio-item">
-				<a href="https://www.tntgenesis.com/social/" target="_blank" class="portfolio-link" data-toggle="modal">
-					<div class="portfolio-hover">
-						<div class="portfolio-hover-content">
-							<i class="fa fa-bomb fa-4x"></i>
-						</div>
-					</div>
-					<img src="https://68.media.tumblr.com/1bb51245366cf7d2ed615777511d43bc/tumblr_o34hdtJpzG1v4ifixo3_540.png"
-						 class="img-responsive" alt="TNTgenesis Social Site">
-				</a>
-				<div class="portfolio-caption">
-					<h4>Social Genesis</h4>
-					<p class="text-muted small-text">Logo/Website Design/Development <br/>WordPress Site with custom JS
-						and PHP</p>
-				</div>
-			</div>
-			<!-- End of Portfolio img2 -->
-
-			<!-- Portfolio img3 -->
-			<div class="col-md-4 col-sm-4 portfolio-item">
-				<a href="http://www.wcfisheries.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-					<div class="portfolio-hover">
-						<div class="portfolio-hover-content">
-							<i class="fa fa-bomb fa-4x"></i>
-						</div>
-					</div>
-					<img src="https://68.media.tumblr.com/a0d80035411cd9d45a7c4118410b2d8a/tumblr_o3jcutEJMY1v4ifixo1_540.png"
-						 class="img-responsive" alt="Willow Creek Fisheries Homepage">
-				</a>
-				<div class="portfolio-caption">
-					<h4>Willow Creek Fisheries</h4>
-					<p class="text-muted small-text">Logo/Website Design/Development <br/>WordPress site with custom JS
-						and PHP</p>
-				</div>
-			</div>
-			<!-- End of Portfolio img3 -->
-
-			<!-- Portfolio img4 -->
-			<div class="col-md-6 col-sm-6 portfolio-item">
-				<a href="http://teamandybfit.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-					<div class="portfolio-hover">
-						<div class="portfolio-hover-content">
-							<i class="fa fa-bomb fa-4x"></i>
-						</div>
-					</div>
-					<img src="https://68.media.tumblr.com/754dbb9012a172562b5885721fbdd7dc/tumblr_o7dkk8jdPB1v4ifixo1_540.png"
-						 class="img-responsive" alt="Team AndyBFit Homepage">
-				</a>
-				<div class="portfolio-caption">
-					<h4>Team AndyBFit</h4>
-					<p class="text-muted small-text">Logo Design <br/>Site Coming Soon!</p>
-				</div>
-			</div>
-
-			<!-- Portfolio img5 -->
-			<div class="col-md-6 col-sm-6 portfolio-item">
-				<a href="http://www.ggrealtysolutions.com/" target="_blank" class="portfolio-link" data-toggle="modal">
-					<div class="portfolio-hover">
-						<div class="portfolio-hover-content">
-							<i class="fa fa-bomb fa-4x"></i>
-						</div>
-					</div>
-					<img src="http://ggrealtysolutions.com/wp-content/uploads/2016/08/for-sale-sign2blankW-e1477208137753.png"
-						 class="img-responsive" alt="G & G Realty Solutions Homepage">
-				</a>
-				<div class="portfolio-caption">
-					<h4>G & G Realty Solutions</h4>
-					<p class="text-muted small-text">Logo/Website Design/Development <br/>WordPress site with custom JS
-						and PHP</p>
-				</div>
-			</div>
-		</div>
-
-		<!-- End of Portfolio img5 -->
-
-		<div class="row">
-			<!-- Portfolio img6 -->
-			<div class="col-md-4 col-sm-4 portfolio-item">
-				<a href="http://TrevorTuchten.github.io/bitwise/ToDoApp/" target="_blank" class="portfolio-link"
-				   data-toggle="modal">
-					<div class="portfolio-hover">
-						<div class="portfolio-hover-content">
-							<i class="fa fa-bomb fa-4x"></i>
-						</div>
-					</div>
-					<img src="https://68.media.tumblr.com/37351ec39de4956cafbf977c6697dc63/tumblr_o34jr0R7ML1v4ifixo1_540.png"
-						 class="img-responsive" alt="Custom Task manager on Github">
-				</a>
-				<div class="portfolio-caption">
-					<h4>Trev's Task Manager (Demo)</h4>
-					<p class="text-muted small-text">Bootstrap and Vanilla JavaScript</p>
-				</div>
-			</div>
-			<!-- End of Portfolio img6 -->
-
-			<!-- Portfolio img7 -->
-			<div class="col-md-4 col-sm-4 portfolio-item">
-				<a href="http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampTwitchtv/" target="_blank"
-				   class="portfolio-link" data-toggle="modal">
-					<div class="portfolio-hover">
-						<div class="portfolio-hover-content">
-							<i class="fa fa-bomb fa-4x"></i>
-						</div>
-					</div>
-					<img src="https://68.media.tumblr.com/a8e52bfb126616e7c8990d0b15a91d6b/tumblr_o8qugbSWQF1v4ifixo1_540.png"
-						 class="img-responsive" alt="Twitch Stream List on Github">
-				</a>
-				<div class="portfolio-caption">
-					<h4>Code Camp Twitch Stream List (Demo)</h4>
-					<p class="text-muted small-text">jQuery, API, BootStrap</p>
-				</div>
-			</div>
-			<!-- End of Portfolio img7 -->
-
-			<!-- Portfolio img8 -->
-			<div class="col-md-4 col-sm-4 portfolio-item">
-				<a href="http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampQuoteGen/" target="_blank"
-				   class="portfolio-link" data-toggle="modal">
-					<div class="portfolio-hover">
-						<div class="portfolio-hover-content">
-							<i class="fa fa-bomb fa-4x"></i>
-						</div>
-					</div>
-					<img src="https://68.media.tumblr.com/a0e387b8b3620ba5b5f5ca811f457147/tumblr_o4k11ms8c31v4ifixo1_540.png"
-						 class="img-responsive" alt="Quote Generator on Github">
-				</a>
-				<div class="portfolio-caption">
-					<h4>Trev's Quote Generator (Demo)</h4>
-					<p class="text-muted small-text">jQuery, API, BootStrap</p>
-				</div>
-			</div>
-			<!-- End of Portfolio img8 -->
-		</div>
-
-		<!-- Portfolio img9 -->
-		<div class="col-md-6 col-sm-6 portfolio-item">
-			<a href="http://TrevorTuchten.github.io/personalProjects/phsycSq/" target="_blank" class="portfolio-link"
-			   data-toggle="modal">
-				<div class="portfolio-hover">
-					<div class="portfolio-hover-content">
-						<i class="fa fa-bomb fa-4x"></i>
-					</div>
-				</div>
-				<img src="https://40.media.tumblr.com/fb01e198ce9722cd6f49b50d7d1a459e/tumblr_o34mapAj9I1v4ifixo1_540.png"
-					 class="img-responsive" alt="Fun CSS3 on Github">
-			</a>
-			<div class="portfolio-caption">
-				<h4>Trev's Psychedelic Squares (Demo)</h4>
-				<p class="text-muted small-text">Javascript, CSS</p>
-			</div>
-		</div>
-		<!-- End of Portfolio img9 -->
-
-		<!-- Portfolio img10 -->
-		<div class="col-md-6 col-sm-6 portfolio-item">
-			<a href="http://TrevorTuchten.github.io/personalProjects/whatodo/" target="_blank" class="portfolio-link"
-			   data-toggle="modal">
-				<div class="portfolio-hover">
-					<div class="portfolio-hover-content">
-						<i class="fa fa-bomb fa-4x"></i>
-					</div>
-				</div>
-				<img src="https://68.media.tumblr.com/80093de8aa1ac97879a6bebcb20bc6ac/tumblr_o539lfJuv61v4ifixo1_540.png"
-					 class="img-responsive" alt="Fun Finder on Github">
-			</a>
-			<div class="portfolio-caption">
-				<h4>Trev's Fun Finder (Demo)</h4>
-				<p class="text-muted small-text">jQuery, API, BootStrap</p>
-			</div>
-		</div>
-		<!-- End of Portfolio img10 -->
-
-		<!-- Portfolio img11 -->
-		<div class="col-md-6 col-sm-6 portfolio-item">
-			<a href="http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWeatherApp/" target="_blank"
-			   class="portfolio-link" data-toggle="modal">
-				<div class="portfolio-hover">
-					<div class="portfolio-hover-content">
-						<i class="fa fa-bomb fa-4x"></i>
-					</div>
-				</div>
-				<img src="https://66.media.tumblr.com/6780013c420bc362e6d7d26971d61ac8/tumblr_o8qvhaeVKY1v4ifixo1_540.png"
-					 class="img-responsive" alt="Fun CSS3 on Github">
-			</a>
-			<div class="portfolio-caption">
-				<h4>Code Camp Local Weather App (Demo)</h4>
-				<p class="text-muted small-text">jQuery, API, BootStrap</p>
-			</div>
-		</div>
-		<!-- End of Portfolio img11 -->
-
-		<!-- Portfolio img12 -->
-		<div class="col-md-6 col-sm-6 portfolio-item">
-			<a href="http://TrevorTuchten.github.io/freeCodeCampProjects/codeCampWikiViewer/" target="_blank"
-			   class="portfolio-link" data-toggle="modal">
-				<div class="portfolio-hover">
-					<div class="portfolio-hover-content">
-						<i class="fa fa-bomb fa-4x"></i>
-					</div>
-				</div>
-				<img src="https://66.media.tumblr.com/a0ed159d67f96f36e9cfd5acd6f2d610/tumblr_o8qw78hqA61v4ifixo1_540.png"
-					 class="img-responsive" alt="Fun CSS3 on Github">
-			</a>
-			<div class="portfolio-caption">
-				<h4>Code Camp Wiki Viewer (Demo)</h4>
-				<p class="text-muted small-text">jQuery, API, BootStrap</p>
-			</div>
-		</div>
-		<!-- End of Portfolio img12 -->
-
-	</div>
-</section>
-
-<a id="contactTNT"></a>
-<div class="banner">
-	<div class="bg-overlay4">
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-6 col-sm-12 col-xs-12">
-					<h2 class="connect">Software and Web Developer Available for Freelance / Part-time / Full-time /
-						Contract, Email me.
-						<a href="mailto:trevor.tuchten@tntgenesis.com" target="_blank">
-							<span class="network-name">Here</span>
-						</a>
-					</h2>
-					<br	/>
-					<h2 class="connect">Download a copy of my resume
-						<a href="files/myProgrammingResume.pdf" target="_blank" download="myProgrammingResume.pdf">
-							<span class="network-name">Here</span>
-						</a>
-					</h2>
-				</div>
-				<br>
-
-
-				<div class="col-lg-6 col-sm-12 col-xs-12">
-					<ul class="list-inline banner-social-buttons">
+				<div class="col-lg-12">
+					<ul class="list-inline">
 						<li>
-							<a href="https://twitter.com/tnt_genesis_" target="_blank" class="btn btn-default btn-lg"><i
-									class="fa fa-twitter fa-fw"></i> <span class="network-name">Twitter</span></a>
+							<a href="#">Home</a>
 						</li>
+						<li class="footer-menu-divider">&sdot;</li>
 						<li>
-							<a href="https://github.com/TrevorTuchten" target="_blank"
-							   class="btn btn-default btn-lg "><i class="fa fa-github fa-fw"></i> <span
-									class="network-name">Github</span></a>
+							<a href="#aboutTNT">About</a>
 						</li>
+						<li class="footer-menu-divider">&sdot;</li>
 						<li>
-							<a href="https://www.linkedin.com/in/tntuchten" target="_blank"
-							   class="btn btn-default btn-lg"><i class="fa fa-linkedin fa-fw"></i> <span
-									class="network-name">Linkedin</span></a>
+							<a href="#TNTportfolio">Portfolio</a>
 						</li>
+						<li class="footer-menu-divider">&sdot;</li>
 						<li>
-							<a href="http://codepen.io/tntgenesis/" target="_blank" class="btn btn-default btn-lg"><i
-									class="fa fa-codepen fa-fw"></i> <span class="network-name">Codepen</span></a>
-						</li>
-						<li>
-							<a href="http://www.freecodecamp.com/trevortuchten" target="_blank"
-							   class="btn btn-default btn-lg"><i class="fa fa-fire fa-fw"></i> <span
-									class="network-name">freeCodeCamp</span></a>
+							<a href="#contactTNT">Contact</a>
 						</li>
 					</ul>
+					<p class="copyright text-muted small">Copyright &copy; <a href="http://www.tntgenesis.com">TNTgenesis.com</a>
+						Web Development 2015. All Rights Reserved</p>
 				</div>
 			</div>
-			<!-- /.container -->
 		</div>
-	</div>
-</div>
-<!-- /.banner -->
+	</footer>
 
-<!-- Footer -->
-<footer>
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery-2.2.4.min.js" integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
 
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<ul class="list-inline">
-					<li>
-						<a href="#">Home</a>
-					</li>
-					<li class="footer-menu-divider">&sdot;</li>
-					<li>
-						<a href="#aboutTNT">About</a>
-					</li>
-					<li class="footer-menu-divider">&sdot;</li>
-					<li>
-						<a href="#TNTportfolio">Portfolio</a>
-					</li>
-					<li class="footer-menu-divider">&sdot;</li>
-					<li>
-						<a href="#contactTNT">Contact</a>
-					</li>
-				</ul>
-				<p class="copyright text-muted small">Copyright &copy; <a href="http://www.tntgenesis.com">TNTgenesis.com</a>
-					Web Development 2015. All Rights Reserved</p>
-			</div>
-		</div>
-	</div>
-</footer>
-<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-<script src="js/scripts.js"></script>
-<script src="js/bootstrap.min.js"></script>
+	<!-- Latest compiled and minified JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+
+	<script src="js/scripts.js" type="text/javascript" ></script>
+	<script src="js/toggle.js" type="text/javascript" ></script>
 </body>
 </html>
